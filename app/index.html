@@ -1,1285 +1,1272 @@
 <!DOCTYPE html>
 <html lang="ru">
-  	<head>
-	    <meta charset="utf-8">
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-		<title>Свои люди хостел</title>
-
-	    <link href="/css/normalize.css" rel="stylesheet">
-	    <link href="/css/fonts.css" rel="stylesheet">
-	    <link href="/css/plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
-	    <link href="/js/plugins/slick/slick.css" rel="stylesheet">
-	    <link href="/css/styles.css" rel="stylesheet">
-
-	    <!--[if lt IE 9]>
-	      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	    <![endif]-->
-  	</head>
-
-	<body>
-    	<div class="wrap">
-			<header class="header">
-				<div class="row">
-					<div class="col-md-2">
-						<div class="logo">
-							<img src="/images/logo.png" alt="логотип" class="logo__image">
-						</div>
-					</div>
-
-					<div class="col-md-9 col-md-offset-1">
-						<div class="row">
-							<div class="col-md-8">
-								<div class="button-area">
-									<button class="button button_color_pink button_icon_smartphone" data-type="call-question">Перезвоните мне</button>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<address class="contacts">
-									<span class="contacts__phone">8 800 000 0000</span>
-									<span class="contacts__address">г. Казань, Лево-Булачная д. 56</span>
-								</address>
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="col-md-12">
-								<nav class="menu">
-									<a href="#rooms" class="menu__link">Наши номера</a>
-									<a href="#how-to-settle" class="menu__link">Как заселиться?</a>
-									<a href="#about" class="menu__link">О хостеле</a>
-									<a href="#social" class="menu__link">Мы в соц.сетях</a>
-									<a href="#contacts" class="menu__link">Контакты</a>
-								</nav>
-							</div>
-						</div>
-					</div>
-				</div>
-			</header>
-
-			<section class="slider-area">
-				<ul class="slider">
-					<li class="slider__item">
-						<img src="/content/slider/1.jpg" alt="слайд 1" class="slider__image">
-
-						<div class="slider__caption  slider__caption_num_1">
-							<div class="slider__content-wrap">
-								<div class="slider__content">
-									<h4 class="slider__header">Удобная кухня</h4>
-									<div class="slider__line"></div>
-									<p class="text">Наша кухня оборудована всем<br>
-									самым необходимым, так что Вы<br>
-									сможите приготовить себе еду</p>
-								</div>
-							</div>
-						</div>
-					</li>
-
-					<li class="slider__item">
-						<img src="/content/slider/2.jpg" alt="слайд 2" class="slider__image">
-
-						<div class="slider__caption  slider__caption_num_2">
-							<div class="slider__content-wrap">
-								<div class="slider__content">
-									<h4 class="slider__header">красный номер</h4>
-									<div class="slider__line"></div>
-									<p class="text">Общий номер. У каждой кровати<br>
-									есть светильник, розетки и шторки.<br>
-									А также индивидуальные,<br>
-									запирающиеся на ключ, ящики.</p>
-								</div>
-							</div>
-						</div>
-					</li>
-
-					<li class="slider__item">
-						<img src="/content/slider/3.jpg" alt="слайд 3" class="slider__image">
-
-						<div class="slider__caption  slider__caption_num_3">
-							<div class="slider__content-wrap">
-								<div class="slider__content">
-									<h4 class="slider__header">хостел класса люкс</h4>
-									<div class="slider__line"></div>
-									<p class="text">Находится в самом центре Казани<br>
-									с видом на канал Булак и театр им. Г. Камала</p>
-								</div>
-							</div>
-						</div>
-					</li>
-
-					<li class="slider__item">
-						<img src="/content/slider/4.jpg" alt="слайд 4" class="slider__image">
-
-						<div class="slider__caption slider__caption_num_4">
-							<div class="slider__content-wrap">
-								<div class="slider__content">
-									<h4 class="slider__header">общие места</h4>
-									<div class="slider__line"></div>
-									<p class="text">2 рабочих ноутбука. Настольные<br>
-									игры для детей и взрослых.<br>
-									У нас есть даже классики ;)</p>
-								</div>
-							</div>
-						</div>
-					</li>
-
-					<li class="slider__item">
-						<img src="/content/slider/5.jpg" alt="слайд 5" class="slider__image">
-
-						<div class="slider__caption slider__caption_num_5">
-							<div class="slider__content-wrap">
-								<div class="slider__content">
-									<h4 class="slider__header">VIP номер</h4>
-									<div class="slider__line"></div>
-									<p class="text">Большая двуспальная кровать.<br>
-									Вместимость 2-6 человек.<br>
-									Душ, туалет, кондиционер в номере.</p>
-								</div>
-							</div>
-						</div>
-					</li>
-				</ul>
-			</section>
-
-			<section id="rooms" class="rooms">
-				<div class="section-header">
-					<h2 class="section-header__header">Номера</h2>
-					<div class="section-header__line"></div>
-				</div>
-
-				<ul class="rooms__types-list">
-					<li class="rooms__type rooms__type_name_jeans rooms__type_active">джинсовый</li>
-					<li class="rooms__type rooms__type_name_blue">синий</li>
-					<li class="rooms__type rooms__type_name_mint">мятный</li>
-					<li class="rooms__type rooms__type_name_yellow">желтый</li>
-					<li class="rooms__type rooms__type_name_red">красный</li>
-					<li class="rooms__type rooms__type_name_orange">оранжевый</li>
-					<li class="rooms__type rooms__type_name_green">зеленый</li>
-					<li class="rooms__type rooms__type_name_vip">vip</li>
-					<li class="rooms__type rooms__type_name_white">белый</li>
-				</ul>
-
-				<!-- Джинсовый номер -->
-				<div class="rooms__item rooms__item_active">
-					<div class="rooms__counters">
-						<div class=" row">
-							<div class="col-md-4">
-								<div class="rooms__counters-item align-right">
-									<span class="text rooms__counters-icon rooms__counters-icon_type_people"></span>
-									<span class="text rooms__counters-title">количество<br>людей</span>
-									<span class="rooms__counters-value">6-9</span>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="rooms__counters-item  align-center">
-									<span class="text rooms__counters-icon rooms__counters-icon_type_bed"></span>
-									<span class="text rooms__counters-title">односпальная<br>кровать</span>
-									<span class="rooms__counters-value">6</span>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="rooms__counters-item  align-left">
-									<span class="text rooms__counters-icon rooms__counters-icon_type_chair"></span>
-									<span class="text rooms__counters-title">кресло-<br>кровать</span>
-									<span class="rooms__counters-value">3</span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="rooms__flex row">
-						<div class="col-md-7">
-							<ul class="rooms_images-gallery glr-1">
-								<li class="rooms__image-item">
-									<img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
-								</li>
-
-								<li class="rooms__image-item">
-									<img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
-								</li>
-
-								<li class="rooms__image-item">
-									<img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
-								</li>
-							</ul>
-						</div>
-
-						<div class="col-md-5">
-							<h2 class="rooms__header">Джинсовый номер <small class="rooms__count">(двухкомнатный)</small></h2>
-
-							<ul class="rooms__characters">
-								<li class="text rooms__characters-item">кресло-кровать</li>
-								<li class="text rooms__characters-item">Wi-Fi</li>
-								<li class="text rooms__characters-item">кондиционер</li>
-								<li class="text rooms__characters-item">телевизор</li>
-								<li class="text rooms__characters-item">контроль климата</li>
-								<li class="text rooms__characters-item">зона отдыха</li>
-								<li class="text rooms__characters-item">место для хранения багажа</li>
-								<li class="text rooms__characters-item">индивидуальный контроль доступа для каждого спального места</li>
-								<li class="text rooms__characters-item">электрификация и индивидуальное освещение</li>
-							</ul>
-
-							<div class="rooms__bottom-block">
-								<div class="row">
-									<div class="col-md-5">
-										<span class="rooms__price">от <b>550</b> &#8381;</span>
-									</div>
-
-									<div class="col-md-7">
-										<button class="button button_color_pink button_icon_key" data-type="reserve">Забронировать</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-
-				<!-- Синий номер -->
-				<div class="rooms__item">
-					<div class="rooms__counters">
-						<div class=" row">
-							<div class="col-md-4">
-								<div class="rooms__counters-item align-right">
-									<span class="text rooms__counters-icon rooms__counters-icon_type_people"></span>
-									<span class="text rooms__counters-title">количество<br>людей</span>
-									<span class="rooms__counters-value">3-5</span>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="rooms__counters-item  align-center">
-									<span class="text rooms__counters-icon rooms__counters-icon_type_bed"></span>
-									<span class="text rooms__counters-title">односпальная<br>кровать</span>
-									<span class="rooms__counters-value">3</span>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="rooms__counters-item  align-left">
-									<span class="text rooms__counters-icon rooms__counters-icon_type_sofa"></span>
-									<span class="text rooms__counters-title">диван</span>
-									<span class="rooms__counters-value">1</span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="rooms__flex row">
-						<div class="col-md-7">
-							<ul class="rooms_images-gallery glr-2">
-								<li class="rooms__image-item">
-									<img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
-								</li>
-
-								<li class="rooms__image-item">
-									<img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
-								</li>
-
-								<li class="rooms__image-item">
-									<img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
-								</li>
-							</ul>
-						</div>
-
-						<div class="col-md-5">
-							<h2 class="rooms__header">Синий номер</h2>
-
-							<ul class="rooms__characters">
-								<li class="text rooms__characters-item">Wi-Fi</li>
-								<li class="text rooms__characters-item">кондиционер</li>
-								<li class="text rooms__characters-item">телевизор</li>
-								<li class="text rooms__characters-item">контроль климата</li>
-								<li class="text rooms__characters-item">зона отдыха</li>
-								<li class="text rooms__characters-item">место для хранения багажа</li>
-								<li class="text rooms__characters-item">индивидуальный контроль доступа для каждого спального места</li>
-								<li class="text rooms__characters-item">электрификация и индивидуальное освещение</li>
-							</ul>
-
-							<div class="rooms__bottom-block">
-								<div class="row">
-									<div class="col-md-5">
-										<span class="rooms__price">от <b>650</b> &#8381;</span>
-									</div>
-
-									<div class="col-md-7">
-										<button class="button button_color_pink button_icon_key" data-type="reserve">Забронировать</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-
-				<!-- Мятный номер -->
-				<div class="rooms__item">
-					<div class="rooms__counters">
-						<div class=" row">
-							<div class="col-md-4">
-								<div class="rooms__counters-item align-right">
-									<span class="text rooms__counters-icon rooms__counters-icon_type_people"></span>
-									<span class="text rooms__counters-title">количество<br>людей</span>
-									<span class="rooms__counters-value">3-5</span>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="rooms__counters-item  align-center">
-									<span class="text rooms__counters-icon rooms__counters-icon_type_bed"></span>
-									<span class="text rooms__counters-title">односпальная<br>кровать</span>
-									<span class="rooms__counters-value">3</span>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="rooms__counters-item  align-left">
-									<span class="text rooms__counters-icon rooms__counters-icon_type_sofa"></span>
-									<span class="text rooms__counters-title">диван</span>
-									<span class="rooms__counters-value">1</span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="rooms__flex row">
-						<div class="col-md-7">
-							<ul class="rooms_images-gallery glr-3">
-								<li class="rooms__image-item">
-									<img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
-								</li>
-
-								<li class="rooms__image-item">
-									<img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
-								</li>
-
-								<li class="rooms__image-item">
-									<img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
-								</li>
-							</ul>
-						</div>
-
-						<div class="col-md-5">
-							<h2 class="rooms__header">Мятный номер</h2>
-
-							<ul class="rooms__characters">
-								<li class="text rooms__characters-item">Wi-Fi</li>
-								<li class="text rooms__characters-item">кондиционер</li>
-								<li class="text rooms__characters-item">телевизор</li>
-								<li class="text rooms__characters-item">контроль климата</li>
-								<li class="text rooms__characters-item">зона отдыха</li>
-								<li class="text rooms__characters-item">место для хранения багажа</li>
-								<li class="text rooms__characters-item">индивидуальный контроль доступа для каждого спального места</li>
-								<li class="text rooms__characters-item">электрификация и индивидуальное освещение</li>
-							</ul>
-
-							<div class="rooms__bottom-block">
-								<div class="row">
-									<div class="col-md-5">
-										<span class="rooms__price">от <b>650</b> &#8381;</span>
-									</div>
-
-									<div class="col-md-7">
-										<button class="button button_color_pink button_icon_key" data-type="reserve">Забронировать</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-
-				<!-- Желтый номер -->
-				<div class="rooms__item">
-					<div class="rooms__counters">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="rooms__counters-item align-right">
-									<span class="text rooms__counters-icon rooms__counters-icon_type_people"></span>
-									<span class="text rooms__counters-title">количество<br>людей</span>
-									<span class="rooms__counters-value">3-5</span>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="rooms__counters-item  align-center">
-									<span class="text rooms__counters-icon rooms__counters-icon_type_bed"></span>
-									<span class="text rooms__counters-title">односпальная<br>кровать</span>
-									<span class="rooms__counters-value">3</span>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="rooms__counters-item  align-left">
-									<span class="text rooms__counters-icon rooms__counters-icon_type_sofa"></span>
-									<span class="text rooms__counters-title">диван</span>
-									<span class="rooms__counters-value">1</span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="rooms__flex row">
-						<div class="col-md-7">
-							<ul class="rooms_images-gallery glr-4">
-								<li class="rooms__image-item">
-									<img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
-								</li>
-
-								<li class="rooms__image-item">
-									<img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
-								</li>
-
-								<li class="rooms__image-item">
-									<img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
-								</li>
-							</ul>
-						</div>
-
-						<div class="col-md-5">
-							<h2 class="rooms__header">Желтый номер</h2>
-
-							<ul class="rooms__characters">
-								<li class="text rooms__characters-item">Wi-Fi</li>
-								<li class="text rooms__characters-item">кондиционер</li>
-								<li class="text rooms__characters-item">телевизор</li>
-								<li class="text rooms__characters-item">контроль климата</li>
-								<li class="text rooms__characters-item">зона отдыха</li>
-								<li class="text rooms__characters-item">место для хранения багажа</li>
-								<li class="text rooms__characters-item">электрификация и индивидуальное освещение</li>
-							</ul>
-
-							<div class="rooms__bottom-block">
-								<div class="row">
-									<div class="col-md-5">
-										<span class="rooms__price">от <b>650</b> &#8381;</span>
-									</div>
-
-									<div class="col-md-7">
-										<button class="button button_color_pink button_icon_key" data-type="reserve">Забронировать</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-
-				<!-- Красный номер -->
-				<div class="rooms__item">
-					<div class="rooms__counters">
-						<div class=" row">
-							<div class="col-md-4 col-md-offset-2">
-								<div class="rooms__counters-item align-center">
-									<span class="text rooms__counters-icon rooms__counters-icon_type_people"></span>
-									<span class="text rooms__counters-title">количество<br>людей</span>
-									<span class="rooms__counters-value">8</span>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="rooms__counters-item align-center">
-									<span class="text rooms__counters-icon rooms__counters-icon_type_bed"></span>
-									<span class="text rooms__counters-title">односпальная<br>кровать</span>
-									<span class="rooms__counters-value">8</span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="rooms__flex row">
-						<div class="col-md-7">
-							<ul class="rooms_images-gallery glr-5">
-								<li class="rooms__image-item">
-									<img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
-								</li>
-
-								<li class="rooms__image-item">
-									<img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
-								</li>
-
-								<li class="rooms__image-item">
-									<img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
-								</li>
-							</ul>
-						</div>
-
-						<div class="col-md-5">
-							<h2 class="rooms__header">Красный номер</h2>
-
-							<ul class="rooms__characters">
-								<li class="text rooms__characters-item">Wi-Fi</li>
-								<li class="text rooms__characters-item">кондиционер</li>
-								<li class="text rooms__characters-item">телевизор</li>
-								<li class="text rooms__characters-item">контроль климата</li>
-								<li class="text rooms__characters-item">зона отдыха</li>
-								<li class="text rooms__characters-item">место для хранения багажа</li>
-								<li class="text rooms__characters-item">индивидуальный контроль доступа для каждого спального места</li>
-								<li class="text rooms__characters-item">электрификация и индивидуальное освещение</li>
-							</ul>
-
-							<div class="rooms__bottom-block">
-								<div class="row">
-									<div class="col-md-5">
-										<span class="rooms__price">от <b>500</b> &#8381;</span>
-									</div>
-
-									<div class="col-md-7">
-										<button class="button button_color_pink button_icon_key" data-type="reserve">Забронировать</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-
-				<!-- Оранжевый номер -->
-				<div class="rooms__item">
-					<div class="rooms__counters">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="rooms__counters-item align-right">
-									<span class="text rooms__counters-icon rooms__counters-icon_type_people"></span>
-									<span class="text rooms__counters-title">количество<br>людей</span>
-									<span class="rooms__counters-value">4-5</span>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="rooms__counters-item  align-center">
-									<span class="text rooms__counters-icon rooms__counters-icon_type_bed"></span>
-									<span class="text rooms__counters-title">односпальная<br>кровать</span>
-									<span class="rooms__counters-value">4</span>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="rooms__counters-item  align-left">
-									<span class="text rooms__counters-icon rooms__counters-icon_type_chair"></span>
-									<span class="text rooms__counters-title">кресло-<br>кровать</span>
-									<span class="rooms__counters-value">1</span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="rooms__flex row">
-						<div class="col-md-7">
-							<ul class="rooms_images-gallery glr-6">
-								<li class="rooms__image-item">
-									<img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
-								</li>
-
-								<li class="rooms__image-item">
-									<img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
-								</li>
-
-								<li class="rooms__image-item">
-									<img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
-								</li>
-							</ul>
-						</div>
-
-						<div class="col-md-5">
-							<h2 class="rooms__header">Оранжевый номер</h2>
-
-							<ul class="rooms__characters">
-								<li class="text rooms__characters-item">Wi-Fi</li>
-								<li class="text rooms__characters-item">кресло-кровать</li>
-								<li class="text rooms__characters-item">кондиционер</li>
-								<li class="text rooms__characters-item">телевизор</li>
-								<li class="text rooms__characters-item">контроль климата</li>
-								<li class="text rooms__characters-item">место для хранения багажа</li>
-								<li class="text rooms__characters-item">индивидуальный контроль доступа для каждого спального места</li>
-								<li class="text rooms__characters-item">электрификация и индивидуальное освещение</li>
-							</ul>
-
-							<div class="rooms__bottom-block">
-								<div class="row">
-									<div class="col-md-5">
-										<span class="rooms__price">от <b>600</b> &#8381;</span>
-									</div>
-
-									<div class="col-md-7">
-										<button class="button button_color_pink button_icon_key" data-type="reserve">Забронировать</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-
-				<!-- Зеленый номер -->
-				<div class="rooms__item">
-					<div class="rooms__counters">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="rooms__counters-item align-right">
-									<span class="text rooms__counters-icon rooms__counters-icon_type_people"></span>
-									<span class="text rooms__counters-title">количество<br>людей</span>
-									<span class="rooms__counters-value">2-4</span>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="rooms__counters-item  align-center">
-									<span class="text rooms__counters-icon rooms__counters-icon_type_double-bed"></span>
-									<span class="text rooms__counters-title">двуспальная<br>кровать</span>
-									<span class="rooms__counters-value">1</span>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="rooms__counters-item  align-left">
-									<span class="text rooms__counters-icon rooms__counters-icon_type_bed"></span>
-									<span class="text rooms__counters-title">односпальная<br>кровать</span>
-									<span class="rooms__counters-value">2</span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="rooms__flex row">
-						<div class="col-md-7">
-							<ul class="rooms_images-gallery  glr-7">
-								<li class="rooms__image-item">
-									<img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
-								</li>
-
-								<li class="rooms__image-item">
-									<img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
-								</li>
-
-								<li class="rooms__image-item">
-									<img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
-								</li>
-							</ul>
-						</div>
-
-						<div class="col-md-5">
-							<h2 class="rooms__header">Зеленый номер</h2>
-
-							<ul class="rooms__characters">
-								<li class="text rooms__characters-item">Wi-Fi</li>
-								<li class="text rooms__characters-item">кондиционер</li>
-								<li class="text rooms__characters-item">телевизор</li>
-								<li class="text rooms__characters-item">контроль климата</li>
-								<li class="text rooms__characters-item">место для хранения багажа</li>
-								<li class="text rooms__characters-item">электрификация и индивидуальное освещение</li>
-							</ul>
-
-							<div class="rooms__bottom-block">
-								<div class="row">
-									<div class="col-md-5">
-										<span class="rooms__price">от <b>1600</b> &#8381;</span>
-									</div>
-
-									<div class="col-md-7">
-										<button class="button button_color_pink button_icon_key" data-type="reserve">Забронировать</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-
-				<!-- VIP номер -->
-				<div class="rooms__item">
-					<div class="rooms__counters">
-						<div class="row">
-							<div class="col-md-3">
-								<div class="rooms__counters-item align-left">
-									<span class="text rooms__counters-icon rooms__counters-icon_type_people"></span>
-									<span class="text rooms__counters-title">количество<br>людей</span>
-									<span class="rooms__counters-value">2-6</span>
-								</div>
-							</div>
-
-							<div class="col-md-3">
-								<div class="rooms__counters-item  align-center">
-									<span class="text rooms__counters-icon rooms__counters-icon_type_double-bed"></span>
-									<span class="text rooms__counters-title">двуспальная<br>кровать</span>
-									<span class="rooms__counters-value">1</span>
-								</div>
-							</div>
-
-							<div class="col-md-3">
-								<div class="rooms__counters-item  align-center">
-									<span class="text rooms__counters-icon rooms__counters-icon_type_bed"></span>
-									<span class="text rooms__counters-title">односпальная<br>кровать</span>
-									<span class="rooms__counters-value">2</span>
-								</div>
-							</div>
-
-							<div class="col-md-3">
-								<div class="rooms__counters-item  align-center">
-									<span class="text rooms__counters-icon rooms__counters-icon_type_sofa"></span>
-									<span class="text rooms__counters-title">диван</span>
-									<span class="rooms__counters-value">1</span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="rooms__flex row">
-						<div class="col-md-7">
-							<ul class="rooms_images-gallery glr-8">
-								<li class="rooms__image-item">
-									<img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
-								</li>
-
-								<li class="rooms__image-item">
-									<img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
-								</li>
-
-								<li class="rooms__image-item">
-									<img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
-								</li>
-							</ul>
-						</div>
-
-						<div class="col-md-5">
-							<h2 class="rooms__header">VIP номер</h2>
-
-							<ul class="rooms__characters">
-								<li class="text rooms__characters-item">Wi-Fi</li>
-								<li class="text rooms__characters-item">кресло-кровать</li>
-								<li class="text rooms__characters-item">душ</li>
-								<li class="text rooms__characters-item">умывальник</li>
-								<li class="text rooms__characters-item">раковина</li>
-								<li class="text rooms__characters-item">кондиционер</li>
-								<li class="text rooms__characters-item">телевизор</li>
-								<li class="text rooms__characters-item">зона отдыха</li>
-								<li class="text rooms__characters-item">место для хранения багажа</li>
-							</ul>
-
-							<div class="rooms__bottom-block">
-								<div class="row">
-									<div class="col-md-5">
-										<span class="rooms__price">от <b>2000</b> &#8381;</span>
-									</div>
-
-									<div class="col-md-7">
-										<button class="button button_color_pink button_icon_key" data-type="reserve">Забронировать</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-
-				<!-- Белый номер -->
-				<div class="rooms__item">
-					<div class="rooms__counters">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="rooms__counters-item align-right">
-									<span class="text rooms__counters-icon rooms__counters-icon_type_people"></span>
-									<span class="text rooms__counters-title">количество<br>людей</span>
-									<span class="rooms__counters-value">8-10</span>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="rooms__counters-item  align-center">
-									<span class="text rooms__counters-icon rooms__counters-icon_type_bed"></span>
-									<span class="text rooms__counters-title">односпальная<br>кровать</span>
-									<span class="rooms__counters-value">8</span>
-								</div>
-							</div>
-
-							<div class="col-md-4">
-								<div class="rooms__counters-item  align-left">
-									<span class="text rooms__counters-icon rooms__counters-icon_type_chair"></span>
-									<span class="text rooms__counters-title">кресло-<br>кровать</span>
-									<span class="rooms__counters-value">2</span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="rooms__flex row">
-						<div class="col-md-7">
-							<ul class="rooms_images-gallery glr-9">
-								<li class="rooms__image-item">
-									<img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
-								</li>
-
-								<li class="rooms__image-item">
-									<img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
-								</li>
-
-								<li class="rooms__image-item">
-									<img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
-								</li>
-							</ul>
-						</div>
-
-						<div class="col-md-5">
-							<h2 class="rooms__header">Белый номер</h2>
-
-							<ul class="rooms__characters">
-								<li class="text rooms__characters-item">Wi-Fi</li>
-								<li class="text rooms__characters-item">кресло-кровать</li>
-								<li class="text rooms__characters-item">кондиционер</li>
-								<li class="text rooms__characters-item">телевизор</li>
-								<li class="text rooms__characters-item">контроль климата</li>
-								<li class="text rooms__characters-item">зона отдыха</li>
-								<li class="text rooms__characters-item">место для хранения багажа</li>
-								<li class="text rooms__characters-item">индивидуальный контроль доступа для каждого спального места</li>
-								<li class="text rooms__characters-item">электрификация и индивидуальное освещение</li>
-							</ul>
-
-							<div class="rooms__bottom-block">
-								<div class="row">
-									<div class="col-md-5">
-										<span class="rooms__price">от <b>500</b> &#8381;</span>
-									</div>
-
-									<div class="col-md-7">
-										<button class="button button_color_pink button_icon_key" data-type="reserve">Забронировать</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section id="how-to-settle" class="instructions-area">
-				<div class="section-header">
-					<h2 class="section-header__header">Заселиться к нам просто</h2>
-					<div class="section-header__line"></div>
-				</div>
-
-				<div class="instructions">
-					<div class="row">
-						<div class="col-md-3">
-							<div class="instructions__item">
-								<img src="/content/icons/smartphone.png" alt="смартфон" class="instructions__image">
-
-								<p class="text">Вы оставляете заявку<br>
-								по номеру <b>8 800 000 0000</b><br>
-								или на сайте</p>
-
-								<button class="button button_color_pink button_size_sm" data-key="mail-question">Оставить заявку</button>
-							</div>
-						</div>
-
-						<div class="col-md-3">
-							<div class="instructions__item">
-								<img src="/content/icons/girl.png" alt="администратор" class="instructions__image">
-
-								<p class="text">В ближайшее время<br>
-								с Вами свяжется<br>
-								администратор<br>
-								<span class="text_color_pink">обычно, через 5-7 минут</span></p>
-							</div>
-						</div>
-
-						<div class="col-md-3">
-							<div class="instructions__item">
-								<img src="/content/icons/calendar.png" alt="календарь" class="instructions__image">
-
-								<p class="text">Забронирует для Вас<br>
-								места на нужную дату</p>
-							</div>
-						</div>
-
-						<div class="col-md-3">
-							<div class="instructions__item instructions_position_last">
-								<img src="/content/icons/heart.png" alt="сердце" class="instructions__image">
-
-								<p class="text">По приезду с радостью<br>
-								встетит Вас в нашем<br>
-								хостеле</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section id="about" class="about-us">
-				<div class="section-header">
-					<h2 class="section-header__header">О нас говорят</h2>
-					<div class="section-header__line"></div>
-				</div>
-
-				<div class="about-us__content">
-					<div class="row">
-						<div class="col-md-4">
-							<div class="about-us__block">
-								<a href="http://www.booking.com/" target="_blank">
-									<button class="button button_color_pink button_width_full button_size_lg">отзывы на booking.com</button>
-								</a>
-
-								<img src="/content/award.png" alt="booking award" class="about-us__image about-us__image_name_award">
-
-								<img src="/content/koikago.png" alt="koikago" class="about-us__image about-us__image_name_koikago">
-
-								<img src="/content/award-winner.png" alt="award winner" class="about-us__image about-us__image_name_award-winner">
-							</div>
-						</div>
-
-						<div class="col-md-4">
-							<div class="about-us__block">
-								<img src="/content/trip-advisor.jpg" alt="trip advisor" class="about-us__image about-us__image_name_tripadvisor">
-
-								<a href="https://www.tripadvisor.ru/" target="_blank">
-									<button class="button button_color_green button_width_full button_size_lg">отзывы на tripadvisor</button>
-								</a>
-
-								<a href="https://www.tripadvisor.ru/" target="_blank">
-									<button class="button button_color_green button_width_full button_size_lg">написать отзыв</button>
-								</a>
-							</div>
-						</div>
-
-						<div class="col-md-4">
-							<div class="about-us__block">
-								<div class="about-us__image-area">
-									<img src="/content/man-girl.png" alt="10 идей" class="about-us__image about-us__image_name_man-girl">
-									<p class="about-us__image-caption">Получи 10 идей, как<br>провести время в Казани</p>
-								</div>
-
-								<form class="form form_name_ideas">
-									<input type="text" placeholder="ваше имя*" class="input form__input">
-									<input type="email" placeholder="e-mail*" class="input form__input">
-									<button class="button button_color_pink button_icon_lamp button_width_full button_size_lg" data-type="ideas-done" type="button">Получить 10 идей</button>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="info">
-				<div class="section-header">
-					<h2 class="section-header__header">Хостел «Свои люди»</h2>
-					<div class="section-header__line"></div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-6">
-						<p class="text">Год назад 2 самых сильных хостела встретились, чтобы<br>
-						учесть ошибки прошлого и создать самый продуманный и<br>
-						самый клиентоориентированный хостел. И вот что у нас<br>
-						получилось:</p>
-
-						<ul class="icons">
-							<li class="icons__item">
-								<img src="/content/icons/design.png" alt="уникальный дизайн" class="icons__image">
-								<p class="icons__caption">Уникальный<br>дизайн</p>
-							</li>
-
-							<li class="icons__item">
-								<img src="/content/icons/map.png" alt="свои люди в центре казани" class="icons__image">
-								<p class="icons__caption">«свои люди»<br>в центре казани</p>
-							</li>
-
-							<li class="icons__item">
-								<img src="/content/icons/wifi.png" alt="скоростной wi-fi" class="icons__image">
-								<p class="icons__caption">скоростной<br>wi-fi</p>
-							</li>
-						</ul>
-
-						<p class="text">Заботясь о безопасности Гостей мы установили<br>
-						современные системы видеонаблюдения. В каждой комнате<br>
-						есть индивидуальные шкафчики, запирающиеся на ключ.</p>
-					</div>
-
-					<div class="col-md-6">
-						<p class="text">Наши администраторы с легкостью подберут для Вас<br>
-						маршрут от 2х дней до 2х недель, т.к. они проходят<br>
-						специальное обучение по знанию города. Так что скучать<br>
-						не придется. </p>
-
-						<ul class="icons">
-							<li class="icons__item">
-								<img src="/content/icons/like.png" alt="лучший персонал" class="icons__image">
-								<p class="icons__caption">лучший<br>персонал</p>
-							</li>
-
-							<li class="icons__item">
-								<img src="/content/icons/mask.png" alt="татарские вечеринки" class="icons__image">
-								<p class="icons__caption">татарские<br>вечеринки</p>
-							</li>
-
-							<li class="icons__item">
-								<img src="/content/icons/sticker.png" alt="скидки от партнеров" class="icons__image">
-								<p class="icons__caption">скидки<br>от партнеров</p>
-							</li>
-						</ul>
-
-						<p class="text">А еще, для наших Гостей, мы попросили популярные кафе,<br>
-						туроператоров и развлекательные центры о скидках (от 10%<br>
-						до 50%).</p>
-					</div>
-				</div>
-
-				<div class="feedback">
-					<h3 class="feedback__header"><b>Напишите нам</b> прямо сейчас</h3>
-					<p class="text text_margin-top_5px">И мы подберем для Вас маршрут по Казани</p>
-					<button class="button button_color_pink button_icon_pencil button_size_lg" data-type="route">Написать</button>
-				</div>
-			</section>
-
-			<section id="social" class="social-widgets">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="social-widgets__vk">
-							<h2>Виджет ВК</h2>
-						</div>
-					</div>
-
-					<div class="col-md-6">
-						<div class="social-widgets__instagram">
-							<h2>Виджет инстаграм</h2>
-						</div>
-					</div>
-				</div>
-			</section>
-		</div>
-
-		<section id="contacts" class="address">
-			<div id="map" class="map"></div>
-
-			<div class="address__panel">
-				<div class="wrap">
-					<div class="row">
-						<div class="no-padding col-md-4">
-							<div class="address__panel-wrap">
-								<div class="section-header">
-									<h2 class="section-header__header section-header__header_font_sm">как нас найти?</h2>
-									<div class="section-header__line"></div>
-								</div>
-
-								<ul class="address__detail">
-									<li class="text address__detail-item">По адресу: <span class="text_weight_500">Казань, ул. Лево-Булачная, 56</span></li>
-									<li class="text address__detail-item">По телефону: <span class="text_weight_500">8 800 000 0000</span></li>
-									<li class="text address__detail-item">В соц. сетях: <a href="javascript:;" class="address__detail-item_icon_vk"></a></li>
-								</ul>
-
-								<p class="text text_size_lg text_align_center text_margin_10px text_weight_500">Остались вопросы?</p>
-
-								<div class="address__button">
-									<button class="button button_color_pink" data-type="mail-question">Задать вопрос</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<footer class="footer">
-			<span class="footer__text">Copyright &copy; 2017</span>
-		</footer>
-
-		<button class="button button_color_pink button_icon_pencil button_fixed">Отзывы</button>
-
-		<div class="modal modal_type_call-question modal_hidden">
-			<div class="modal__close">
-				<button class="modal__close-button">&times;</button>
-			</div>
-
-			<h3 class="modal__header">
-				У Вас есть вопросы?<br>
-				<small class="modal__text">Мы с радостью перезвоним!</small><br>
-				<small class="modal__text modal__text_color_pink">обычно через 5-7 минут</small>
-			</h3>
-
-			<div class="modal__content">
-				<form class="modal__form">
-					<input type="text" placeholder="Имя" class="input modal__input">
-					<input type="text" placeholder="Номер телефона*" class="input modal__input">
-					<input type="text" placeholder="Удобное время для звонка*" class="input modal__input">
-					<textarea class="input modal__input modal__input_type_textarea" placeholder="Комментарий"></textarea>
-
-					<div class="modal__button-wrap">
-						<button class="button button_color_pink modal__button" type="button" data-type="reserve-done">Отправить</div>
-					</div>
-				</form>
-			</div>
-		</div>
-
-		<div class="modal modal_type_mail-question modal_hidden">
-			<div class="modal__close">
-				<button class="modal__close-button">&times;</button>
-			</div>
-
-			<h3 class="modal__header">
-				У Вас есть вопросы?<br>
-				<small class="modal__text">Мы с радостью ответим!</small><br>
-				<small class="modal__text modal__text_color_pink">обычно через 5-7 минут</small>
-			</h3>
-
-			<div class="modal__content">
-				<form class="modal__form">
-					<input type="text" placeholder="Имя" class="input modal__input">
-					<input type="text" placeholder="Номер телефона*" class="input modal__input">
-					<input type="text" placeholder="Удобное время для звонка*" class="input modal__input">
-					<textarea class="input modal__input modal__input_type_textarea" placeholder="Комментарий"></textarea>
-
-					<div class="modal__button-wrap">
-						<button class="button button_color_pink modal__button" type="button" data-type="reserve-done">Отправить</div>
-					</div>
-				</form>
-			</div>
-		</div>
-
-		<div class="modal modal_type_reserve modal_hidden">
-			<div class="modal__close">
-				<button class="modal__close-button">&times;</button>
-			</div>
-
-			<h3 class="modal__header">
-				Хотите забронировать?<br>
-				<small class="modal__text">Осталось уточнить несколько моментов</small><br>
-				<small class="modal__text modal__text_color_pink">и мы уже бежим застилать постель ;))</small>
-			</h3>
-
-			<div class="modal__content">
-				<form class="modal__form">
-					<div class="row">
-						<div class="col-md-7">
-							<input type="text" placeholder="Имя*" class="input modal__input">
-							<input type="text" placeholder="Номер телефона*" class="input modal__input">
-							<input type="text" placeholder="Когда хотите приехать?" class="input modal__input">
-						</div>
-
-						<div class="col-md-5">
-							<p class="text no-margin">
-								Поделитесь с друзьями и получите<br>
-								<span class="segoe-text text_color_pink">скидку 5%</span><br>
-								<a href="https://vk.com/" target="_blank">
-									<img src="/content/vk-icon-color.png" alt="Вконтакте">
-								</a>
-							</p>
-						</div>
-					</div>
-
-					<div class="modal__button-wrap">
-						<button class="button button_color_pink modal__button" type="button">Отправить</div>
-					</div>
-				</form>
-			</div>
-		</div>
-
-		<div class="modal modal_type_route modal_hidden">
-			<div class="modal__close">
-				<button class="modal__close-button">&times;</button>
-			</div>
-
-			<h3 class="modal__header">
-				Напишите нам прямо сейчас,<br>
-				<small class="modal__text">и мы расскажем куда еще можно сходить в Казани</small>
-			</h3>
-
-			<div class="modal__content">
-				<form class="modal__form">
-					<div class="row">
-						<div class="col-md-6">
-							<input type="text" placeholder="Имя*" class="input modal__input">
-							<input type="text" placeholder="Номер телефона*" class="input modal__input">
-							<input type="text" placeholder="E-mail" class="input modal__input">
-						</div>
-
-						<div class="col-md-6">
-							<p class="no-margin">
-								<span class="segoe-text text_color_pink">А Вы знали,</span><br>
-								<span class="segoe-text segoe-text_size_small">что когда Иван IV Грозный готовил
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Свои люди хостел</title>
+
+    <link href="/css/normalize.css" rel="stylesheet">
+    <link href="/css/fonts.css" rel="stylesheet">
+    <link href="/css/plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="/js/plugins/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div class="wrap">
+    <div class="container">
+        <header class="header">
+            <div class="row">
+                <div class="col-xs-6 col-sm-3 col-md-2">
+                    <div class="logo">
+                        <img src="/images/logo.png" alt="логотип" class="logo__image">
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-9 col-md-10">
+                    <div class="row hidden-xs">
+                        <div class="col-md-8 col-sm-8">
+                            <div class="button-area">
+                                <button class="button button_color_pink button_icon_smartphone"
+                                        data-type="call-question">
+                                    <span class="dib">Перезвоните мне</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-4">
+                            <address class="contacts">
+                                <span class="contacts__phone">8 800 000 0000</span>
+                                <span class="contacts__address">г. Казань, Лево-Булачная д. 56</span>
+                            </address>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mobile-menu__icon visible-sm visible-xs">
+                                <div class="mobile-menu__icon-line"></div>
+                            </div>
+                            <nav class="menu">
+                                <a href="#rooms" class="menu__link">Наши номера</a>
+                                <a href="#how-to-settle" class="menu__link">Как заселиться?</a>
+                                <a href="#about" class="menu__link">О хостеле</a>
+                                <a href="#social" class="menu__link">Мы в соц.сетях</a>
+                                <a href="#contacts" class="menu__link">Контакты</a>
+
+                                <i class="js-close-mobile-menu visible-xs"></i>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="slider-area">
+            <ul class="slider owl-carousel">
+                <li class="slider__item">
+                    <img src="/content/slider/1.jpg" alt="слайд 1" class="slider__image">
+
+                    <div class="slider__caption  slider__caption_num_1">
+                        <div class="slider__content-wrap">
+                            <div class="slider__content">
+                                <h4 class="slider__header">Удобная кухня</h4>
+                                <div class="slider__line"></div>
+                                <p class="text">Наша кухня оборудована всем<br>
+                                    самым необходимым, так что Вы<br>
+                                    сможите приготовить себе еду</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="slider__item">
+                    <img src="/content/slider/2.jpg" alt="слайд 2" class="slider__image">
+
+                    <div class="slider__caption  slider__caption_num_2">
+                        <div class="slider__content-wrap">
+                            <div class="slider__content">
+                                <h4 class="slider__header">красный номер</h4>
+                                <div class="slider__line"></div>
+                                <p class="text">Общий номер. У каждой кровати<br>
+                                    есть светильник, розетки и шторки.<br>
+                                    А также индивидуальные,<br>
+                                    запирающиеся на ключ, ящики.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="slider__item">
+                    <img src="/content/slider/3.jpg" alt="слайд 3" class="slider__image">
+
+                    <div class="slider__caption  slider__caption_num_3">
+                        <div class="slider__content-wrap">
+                            <div class="slider__content">
+                                <h4 class="slider__header">хостел класса люкс</h4>
+                                <div class="slider__line"></div>
+                                <p class="text">Находится в самом центре Казани<br>
+                                    с видом на канал Булак и театр им. Г. Камала</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="slider__item">
+                    <img src="/content/slider/4.jpg" alt="слайд 4" class="slider__image">
+
+                    <div class="slider__caption slider__caption_num_4">
+                        <div class="slider__content-wrap">
+                            <div class="slider__content">
+                                <h4 class="slider__header">общие места</h4>
+                                <div class="slider__line"></div>
+                                <p class="text">2 рабочих ноутбука. Настольные<br>
+                                    игры для детей и взрослых.<br>
+                                    У нас есть даже классики ;)</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="slider__item">
+                    <img src="/content/slider/5.jpg" alt="слайд 5" class="slider__image">
+
+                    <div class="slider__caption slider__caption_num_5">
+                        <div class="slider__content-wrap">
+                            <div class="slider__content">
+                                <h4 class="slider__header">VIP номер</h4>
+                                <div class="slider__line"></div>
+                                <p class="text">Большая двуспальная кровать.<br>
+                                    Вместимость 2-6 человек.<br>
+                                    Душ, туалет, кондиционер в номере.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="rooms" class="rooms">
+            <div class="section-header">
+                <h2 class="section-header__header">Номера</h2>
+                <div class="section-header__line"></div>
+            </div>
+
+            <ul class="rooms__types-list">
+                <li class="rooms__type rooms__type_name_jeans rooms__type_active">джинсовый</li>
+                <li class="rooms__type rooms__type_name_blue">синий</li>
+                <li class="rooms__type rooms__type_name_mint">мятный</li>
+                <li class="rooms__type rooms__type_name_yellow">желтый</li>
+                <li class="rooms__type rooms__type_name_red">красный</li>
+                <li class="rooms__type rooms__type_name_orange">оранжевый</li>
+                <li class="rooms__type rooms__type_name_green">зеленый</li>
+                <li class="rooms__type rooms__type_name_vip">vip</li>
+                <li class="rooms__type rooms__type_name_white">белый</li>
+            </ul>
+
+            <!-- Джинсовый номер -->
+            <div class="rooms__item rooms__item_active">
+                <div class="rooms__counters">
+
+                    <div class="rooms__counters-item align-right">
+                        <span class="text rooms__counters-icon rooms__counters-icon_type_people"></span>
+                        <span class="text rooms__counters-title">количество<br>людей</span>
+                        <span class="rooms__counters-value">6-9</span>
+                    </div>
+
+                    <div class="rooms__counters-item  align-center">
+                        <span class="text rooms__counters-icon rooms__counters-icon_type_bed"></span>
+                        <span class="text rooms__counters-title">односпальная<br>кровать</span>
+                        <span class="rooms__counters-value">6</span>
+                    </div>
+
+                    <div class="rooms__counters-item  align-left">
+                        <span class="text rooms__counters-icon rooms__counters-icon_type_chair"></span>
+                        <span class="text rooms__counters-title">кресло-<br>кровать</span>
+                        <span class="rooms__counters-value">3</span>
+                    </div>
+
+                </div>
+
+                <div class="rooms__flex row">
+                    <div class="col-md-7">
+                        <ul class="rooms_images-gallery owl-carousel glr-1">
+                            <li class="rooms__image-item">
+                                <img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
+                            </li>
+
+                            <li class="rooms__image-item">
+                                <img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
+                            </li>
+
+                            <li class="rooms__image-item">
+                                <img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 rooms__right-side">
+                        <h2 class="rooms__header">Джинсовый номер
+                            <small class="rooms__count">(двухкомнатный)</small>
+                        </h2>
+
+                        <ul class="rooms__characters">
+                            <li class="text rooms__characters-item">кресло-кровать</li>
+                            <li class="text rooms__characters-item">Wi-Fi</li>
+                            <li class="text rooms__characters-item">кондиционер</li>
+                            <li class="text rooms__characters-item">телевизор</li>
+                            <li class="text rooms__characters-item">контроль климата</li>
+                            <li class="text rooms__characters-item">зона отдыха</li>
+                            <li class="text rooms__characters-item">место для хранения багажа</li>
+                            <li class="text rooms__characters-item">индивидуальный контроль доступа для каждого
+                                спального
+                                места
+                            </li>
+                            <li class="text rooms__characters-item">электрификация и индивидуальное освещение</li>
+                        </ul>
+
+                        <div class="rooms__bottom-block">
+                            <div class="display-flex space-between flex-wrap flex-middle">
+                                <span class="rooms__price">от <b>550</b> &#8381;</span>
+                                <button class="button button_color_pink button_icon_key" data-type="reserve">
+                                    <span class="dib">Забронировать</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Синий номер -->
+            <div class="rooms__item">
+                <div class="rooms__counters">
+
+                    <div class="rooms__counters-item align-right">
+                        <span class="text rooms__counters-icon rooms__counters-icon_type_people"></span>
+                        <span class="text rooms__counters-title">количество<br>людей</span>
+                        <span class="rooms__counters-value">3-5</span>
+                    </div>
+
+                    <div class="rooms__counters-item  align-center">
+                        <span class="text rooms__counters-icon rooms__counters-icon_type_bed"></span>
+                        <span class="text rooms__counters-title">односпальная<br>кровать</span>
+                        <span class="rooms__counters-value">3</span>
+                    </div>
+
+                    <div class="rooms__counters-item  align-left">
+                        <span class="text rooms__counters-icon rooms__counters-icon_type_sofa"></span>
+                        <span class="text rooms__counters-title">диван</span>
+                        <span class="rooms__counters-value">1</span>
+                    </div>
+
+                </div>
+
+                <div class="rooms__flex row">
+                    <div class="col-md-7">
+                        <ul class="rooms_images-gallery owl-carousel glr-2">
+                            <li class="rooms__image-item">
+                                <img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
+                            </li>
+
+                            <li class="rooms__image-item">
+                                <img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
+                            </li>
+
+                            <li class="rooms__image-item">
+                                <img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 rooms__right-side">
+                        <h2 class="rooms__header">Синий номер</h2>
+
+                        <ul class="rooms__characters">
+                            <li class="text rooms__characters-item">Wi-Fi</li>
+                            <li class="text rooms__characters-item">кондиционер</li>
+                            <li class="text rooms__characters-item">телевизор</li>
+                            <li class="text rooms__characters-item">контроль климата</li>
+                            <li class="text rooms__characters-item">зона отдыха</li>
+                            <li class="text rooms__characters-item">место для хранения багажа</li>
+                            <li class="text rooms__characters-item">индивидуальный контроль доступа для каждого
+                                спального
+                                места
+                            </li>
+                            <li class="text rooms__characters-item">электрификация и индивидуальное освещение</li>
+                        </ul>
+
+                        <div class="rooms__bottom-block">
+                            <div class="display-flex space-between flex-wrap flex-middle">
+                                <span class="rooms__price">от <b>650</b> &#8381;</span>
+                                <button class="button button_color_pink button_icon_key" data-type="reserve">
+                                    Забронировать
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Мятный номер -->
+            <div class="rooms__item">
+                <div class="rooms__counters">
+
+                    <div class="rooms__counters-item align-right">
+                        <span class="text rooms__counters-icon rooms__counters-icon_type_people"></span>
+                        <span class="text rooms__counters-title">количество<br>людей</span>
+                        <span class="rooms__counters-value">3-5</span>
+                    </div>
+
+                    <div class="rooms__counters-item  align-center">
+                        <span class="text rooms__counters-icon rooms__counters-icon_type_bed"></span>
+                        <span class="text rooms__counters-title">односпальная<br>кровать</span>
+                        <span class="rooms__counters-value">3</span>
+                    </div>
+
+                    <div class="rooms__counters-item  align-left">
+                        <span class="text rooms__counters-icon rooms__counters-icon_type_sofa"></span>
+                        <span class="text rooms__counters-title">диван</span>
+                        <span class="rooms__counters-value">1</span>
+                    </div>
+
+                </div>
+
+                <div class="rooms__flex row">
+                    <div class="col-md-7">
+                        <ul class="rooms_images-gallery owl-carousel glr-3">
+                            <li class="rooms__image-item">
+                                <img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
+                            </li>
+
+                            <li class="rooms__image-item">
+                                <img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
+                            </li>
+
+                            <li class="rooms__image-item">
+                                <img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 rooms__right-side">
+                        <h2 class="rooms__header">Мятный номер</h2>
+
+                        <ul class="rooms__characters">
+                            <li class="text rooms__characters-item">Wi-Fi</li>
+                            <li class="text rooms__characters-item">кондиционер</li>
+                            <li class="text rooms__characters-item">телевизор</li>
+                            <li class="text rooms__characters-item">контроль климата</li>
+                            <li class="text rooms__characters-item">зона отдыха</li>
+                            <li class="text rooms__characters-item">место для хранения багажа</li>
+                            <li class="text rooms__characters-item">индивидуальный контроль доступа для каждого
+                                спального
+                                места
+                            </li>
+                            <li class="text rooms__characters-item">электрификация и индивидуальное освещение</li>
+                        </ul>
+
+                        <div class="rooms__bottom-block">
+                            <div class="display-flex space-between flex-wrap flex-middle">
+                                <span class="rooms__price">от <b>650</b> &#8381;</span>
+                                <button class="button button_color_pink button_icon_key" data-type="reserve">
+                                    Забронировать
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Желтый номер -->
+            <div class="rooms__item">
+                <div class="rooms__counters">
+
+                    <div class="rooms__counters-item align-right">
+                        <span class="text rooms__counters-icon rooms__counters-icon_type_people"></span>
+                        <span class="text rooms__counters-title">количество<br>людей</span>
+                        <span class="rooms__counters-value">3-5</span>
+                    </div>
+
+                    <div class="rooms__counters-item  align-center">
+                        <span class="text rooms__counters-icon rooms__counters-icon_type_bed"></span>
+                        <span class="text rooms__counters-title">односпальная<br>кровать</span>
+                        <span class="rooms__counters-value">3</span>
+                    </div>
+
+                    <div class="rooms__counters-item  align-left">
+                        <span class="text rooms__counters-icon rooms__counters-icon_type_sofa"></span>
+                        <span class="text rooms__counters-title">диван</span>
+                        <span class="rooms__counters-value">1</span>
+                    </div>
+
+                </div>
+
+                <div class="rooms__flex row">
+                    <div class="col-md-7">
+                        <ul class="rooms_images-gallery owl-carousel glr-4">
+                            <li class="rooms__image-item">
+                                <img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
+                            </li>
+
+                            <li class="rooms__image-item">
+                                <img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
+                            </li>
+
+                            <li class="rooms__image-item">
+                                <img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 rooms__right-side">
+                        <h2 class="rooms__header">Желтый номер</h2>
+
+                        <ul class="rooms__characters">
+                            <li class="text rooms__characters-item">Wi-Fi</li>
+                            <li class="text rooms__characters-item">кондиционер</li>
+                            <li class="text rooms__characters-item">телевизор</li>
+                            <li class="text rooms__characters-item">контроль климата</li>
+                            <li class="text rooms__characters-item">зона отдыха</li>
+                            <li class="text rooms__characters-item">место для хранения багажа</li>
+                            <li class="text rooms__characters-item">электрификация и индивидуальное освещение</li>
+                        </ul>
+
+                        <div class="rooms__bottom-block">
+                            <div class="display-flex space-between flex-wrap flex-middle">
+                                <span class="rooms__price">от <b>650</b> &#8381;</span>
+                                <button class="button button_color_pink button_icon_key" data-type="reserve">
+                                    Забронировать
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Красный номер -->
+            <div class="rooms__item">
+                <div class="rooms__counters">
+                    <div class="rooms__counters-item align-center">
+                        <span class="text rooms__counters-icon rooms__counters-icon_type_people"></span>
+                        <span class="text rooms__counters-title">количество<br>людей</span>
+                        <span class="rooms__counters-value">8</span>
+                    </div>
+                    <div class="rooms__counters-item align-center">
+                        <span class="text rooms__counters-icon rooms__counters-icon_type_bed"></span>
+                        <span class="text rooms__counters-title">односпальная<br>кровать</span>
+                        <span class="rooms__counters-value">8</span>
+                    </div>
+                </div>
+
+                <div class="rooms__flex row">
+                    <div class="col-md-7">
+                        <ul class="rooms_images-gallery owl-carousel glr-5">
+                            <li class="rooms__image-item">
+                                <img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
+                            </li>
+
+                            <li class="rooms__image-item">
+                                <img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
+                            </li>
+
+                            <li class="rooms__image-item">
+                                <img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 rooms__right-side">
+                        <h2 class="rooms__header">Красный номер</h2>
+
+                        <ul class="rooms__characters">
+                            <li class="text rooms__characters-item">Wi-Fi</li>
+                            <li class="text rooms__characters-item">кондиционер</li>
+                            <li class="text rooms__characters-item">телевизор</li>
+                            <li class="text rooms__characters-item">контроль климата</li>
+                            <li class="text rooms__characters-item">зона отдыха</li>
+                            <li class="text rooms__characters-item">место для хранения багажа</li>
+                            <li class="text rooms__characters-item">индивидуальный контроль доступа для каждого
+                                спального
+                                места
+                            </li>
+                            <li class="text rooms__characters-item">электрификация и индивидуальное освещение</li>
+                        </ul>
+
+                        <div class="rooms__bottom-block">
+                            <div class="display-flex space-between flex-wrap flex-middle">
+                                <span class="rooms__price">от <b>500</b> &#8381;</span>
+                                <button class="button button_color_pink button_icon_key" data-type="reserve">
+                                    Забронировать
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Оранжевый номер -->
+            <div class="rooms__item">
+                <div class="rooms__counters">
+
+                    <div class="rooms__counters-item align-right">
+                        <span class="text rooms__counters-icon rooms__counters-icon_type_people"></span>
+                        <span class="text rooms__counters-title">количество<br>людей</span>
+                        <span class="rooms__counters-value">4-5</span>
+                    </div>
+
+                    <div class="rooms__counters-item  align-center">
+                        <span class="text rooms__counters-icon rooms__counters-icon_type_bed"></span>
+                        <span class="text rooms__counters-title">односпальная<br>кровать</span>
+                        <span class="rooms__counters-value">4</span>
+                    </div>
+
+                    <div class="rooms__counters-item  align-left">
+                        <span class="text rooms__counters-icon rooms__counters-icon_type_chair"></span>
+                        <span class="text rooms__counters-title">кресло-<br>кровать</span>
+                        <span class="rooms__counters-value">1</span>
+                    </div>
+
+                </div>
+
+                <div class="rooms__flex row">
+                    <div class="col-md-7">
+                        <ul class="rooms_images-gallery owl-carousel glr-6">
+                            <li class="rooms__image-item">
+                                <img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
+                            </li>
+
+                            <li class="rooms__image-item">
+                                <img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
+                            </li>
+
+                            <li class="rooms__image-item">
+                                <img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 rooms__right-side">
+                        <h2 class="rooms__header">Оранжевый номер</h2>
+
+                        <ul class="rooms__characters">
+                            <li class="text rooms__characters-item">Wi-Fi</li>
+                            <li class="text rooms__characters-item">кресло-кровать</li>
+                            <li class="text rooms__characters-item">кондиционер</li>
+                            <li class="text rooms__characters-item">телевизор</li>
+                            <li class="text rooms__characters-item">контроль климата</li>
+                            <li class="text rooms__characters-item">место для хранения багажа</li>
+                            <li class="text rooms__characters-item">индивидуальный контроль доступа для каждого
+                                спального
+                                места
+                            </li>
+                            <li class="text rooms__characters-item">электрификация и индивидуальное освещение</li>
+                        </ul>
+
+                        <div class="rooms__bottom-block">
+                            <div class="display-flex space-between flex-wrap flex-middle">
+                                <span class="rooms__price">от <b>600</b> &#8381;</span>
+                                <button class="button button_color_pink button_icon_key" data-type="reserve">
+                                    Забронировать
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Зеленый номер -->
+            <div class="rooms__item">
+                <div class="rooms__counters">
+
+                    <div class="rooms__counters-item align-right">
+                        <span class="text rooms__counters-icon rooms__counters-icon_type_people"></span>
+                        <span class="text rooms__counters-title">количество<br>людей</span>
+                        <span class="rooms__counters-value">2-4</span>
+                    </div>
+
+                    <div class="rooms__counters-item  align-center">
+                        <span class="text rooms__counters-icon rooms__counters-icon_type_double-bed"></span>
+                        <span class="text rooms__counters-title">двуспальная<br>кровать</span>
+                        <span class="rooms__counters-value">1</span>
+                    </div>
+
+                    <div class="rooms__counters-item  align-left">
+                        <span class="text rooms__counters-icon rooms__counters-icon_type_bed"></span>
+                        <span class="text rooms__counters-title">односпальная<br>кровать</span>
+                        <span class="rooms__counters-value">2</span>
+                    </div>
+
+                </div>
+
+                <div class="rooms__flex row">
+                    <div class="col-md-7">
+                        <ul class="rooms_images-gallery owl-carousel  glr-7">
+                            <li class="rooms__image-item">
+                                <img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
+                            </li>
+
+                            <li class="rooms__image-item">
+                                <img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
+                            </li>
+
+                            <li class="rooms__image-item">
+                                <img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 rooms__right-side">
+                        <h2 class="rooms__header">Зеленый номер</h2>
+
+                        <ul class="rooms__characters">
+                            <li class="text rooms__characters-item">Wi-Fi</li>
+                            <li class="text rooms__characters-item">кондиционер</li>
+                            <li class="text rooms__characters-item">телевизор</li>
+                            <li class="text rooms__characters-item">контроль климата</li>
+                            <li class="text rooms__characters-item">место для хранения багажа</li>
+                            <li class="text rooms__characters-item">электрификация и индивидуальное освещение</li>
+                        </ul>
+
+                        <div class="rooms__bottom-block">
+                            <div class="display-flex space-between flex-wrap flex-middle">
+                                <span class="rooms__price">от <b>1600</b> &#8381;</span>
+                                <button class="button button_color_pink button_icon_key" data-type="reserve">
+                                    Забронировать
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- VIP номер -->
+            <div class="rooms__item">
+                <div class="rooms__counters">
+
+                    <div class="rooms__counters-item align-left">
+                        <span class="text rooms__counters-icon rooms__counters-icon_type_people"></span>
+                        <span class="text rooms__counters-title">количество<br>людей</span>
+                        <span class="rooms__counters-value">2-6</span>
+                    </div>
+
+                    <div class="rooms__counters-item  align-center">
+                        <span class="text rooms__counters-icon rooms__counters-icon_type_double-bed"></span>
+                        <span class="text rooms__counters-title">двуспальная<br>кровать</span>
+                        <span class="rooms__counters-value">1</span>
+                    </div>
+
+                    <div class="rooms__counters-item  align-center">
+                        <span class="text rooms__counters-icon rooms__counters-icon_type_bed"></span>
+                        <span class="text rooms__counters-title">односпальная<br>кровать</span>
+                        <span class="rooms__counters-value">2</span>
+                    </div>
+
+                    <div class="rooms__counters-item  align-center">
+                        <span class="text rooms__counters-icon rooms__counters-icon_type_sofa"></span>
+                        <span class="text rooms__counters-title">диван</span>
+                        <span class="rooms__counters-value">1</span>
+                    </div>
+
+                </div>
+
+                <div class="rooms__flex row">
+                    <div class="col-md-7">
+                        <ul class="rooms_images-gallery owl-carousel glr-8">
+                            <li class="rooms__image-item">
+                                <img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
+                            </li>
+
+                            <li class="rooms__image-item">
+                                <img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
+                            </li>
+
+                            <li class="rooms__image-item">
+                                <img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 rooms__right-side">
+                        <h2 class="rooms__header">VIP номер</h2>
+
+                        <ul class="rooms__characters">
+                            <li class="text rooms__characters-item">Wi-Fi</li>
+                            <li class="text rooms__characters-item">кресло-кровать</li>
+                            <li class="text rooms__characters-item">душ</li>
+                            <li class="text rooms__characters-item">умывальник</li>
+                            <li class="text rooms__characters-item">раковина</li>
+                            <li class="text rooms__characters-item">кондиционер</li>
+                            <li class="text rooms__characters-item">телевизор</li>
+                            <li class="text rooms__characters-item">зона отдыха</li>
+                            <li class="text rooms__characters-item">место для хранения багажа</li>
+                        </ul>
+
+                        <div class="rooms__bottom-block">
+                            <div class="display-flex space-between flex-wrap flex-middle">
+                                <span class="rooms__price">от <b>2000</b> &#8381;</span>
+                                <button class="button button_color_pink button_icon_key" data-type="reserve">
+                                    Забронировать
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Белый номер -->
+            <div class="rooms__item">
+                <div class="rooms__counters">
+
+                    <div class="rooms__counters-item align-right">
+                        <span class="text rooms__counters-icon rooms__counters-icon_type_people"></span>
+                        <span class="text rooms__counters-title">количество<br>людей</span>
+                        <span class="rooms__counters-value">8-10</span>
+                    </div>
+
+                    <div class="rooms__counters-item  align-center">
+                        <span class="text rooms__counters-icon rooms__counters-icon_type_bed"></span>
+                        <span class="text rooms__counters-title">односпальная<br>кровать</span>
+                        <span class="rooms__counters-value">8</span>
+                    </div>
+
+                    <div class="rooms__counters-item  align-left">
+                        <span class="text rooms__counters-icon rooms__counters-icon_type_chair"></span>
+                        <span class="text rooms__counters-title">кресло-<br>кровать</span>
+                        <span class="rooms__counters-value">2</span>
+                    </div>
+
+                </div>
+
+                <div class="rooms__flex row">
+                    <div class="col-md-7">
+                        <ul class="rooms_images-gallery owl-carousel glr-9">
+                            <li class="rooms__image-item">
+                                <img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
+                            </li>
+
+                            <li class="rooms__image-item">
+                                <img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
+                            </li>
+
+                            <li class="rooms__image-item">
+                                <img src="/content/rooms/jeans.jpg" alt="фото" class="rooms__image">
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 rooms__right-side">
+                        <h2 class="rooms__header">Белый номер</h2>
+
+                        <ul class="rooms__characters">
+                            <li class="text rooms__characters-item">Wi-Fi</li>
+                            <li class="text rooms__characters-item">кресло-кровать</li>
+                            <li class="text rooms__characters-item">кондиционер</li>
+                            <li class="text rooms__characters-item">телевизор</li>
+                            <li class="text rooms__characters-item">контроль климата</li>
+                            <li class="text rooms__characters-item">зона отдыха</li>
+                            <li class="text rooms__characters-item">место для хранения багажа</li>
+                            <li class="text rooms__characters-item">индивидуальный контроль доступа для каждого
+                                спального
+                                места
+                            </li>
+                            <li class="text rooms__characters-item">электрификация и индивидуальное освещение</li>
+                        </ul>
+
+                        <div class="rooms__bottom-block">
+                            <div class="display-flex space-between flex-wrap flex-middle">
+                                <span class="rooms__price">от <b>500</b> &#8381;</span>
+                                <button class="button button_color_pink button_icon_key" data-type="reserve">
+                                    Забронировать
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-to-settle" class="instructions-area">
+            <div class="section-header">
+                <h2 class="section-header__header">Заселиться к нам просто</h2>
+                <div class="section-header__line"></div>
+            </div>
+
+            <div class="instructions">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="instructions__item">
+                            <img src="/content/icons/smartphone.png" alt="смартфон" class="instructions__image">
+
+                            <p class="text">Вы оставляете заявку<br>
+                                по номеру <b>8 800 000 0000</b><br>
+                                или на сайте</p>
+
+                            <button class="button button_color_pink button_size_sm" data-type="mail-question">Оставить
+                                заявку
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="instructions__item">
+                            <img src="/content/icons/girl.png" alt="администратор" class="instructions__image">
+
+                            <p class="text">В ближайшее время<br>
+                                с Вами свяжется<br>
+                                администратор<br>
+                                <span class="text_color_pink">обычно, через 5-7 минут</span></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="instructions__item">
+                            <img src="/content/icons/calendar.png" alt="календарь" class="instructions__image">
+
+                            <p class="text">Забронирует для Вас<br>
+                                места на нужную дату</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="instructions__item instructions_position_last">
+                            <img src="/content/icons/heart.png" alt="сердце" class="instructions__image">
+
+                            <p class="text">По приезду с радостью<br>
+                                встетит Вас в нашем<br>
+                                хостеле</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-us">
+            <div class="section-header">
+                <h2 class="section-header__header">О нас говорят</h2>
+                <div class="section-header__line"></div>
+            </div>
+
+            <div class="about-us__content">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="about-us__block">
+                            <a href="http://www.booking.com/" target="_blank">
+                                <span class="button button_color_pink button_width_full button_size_lg">отзывы на booking.com</span>
+                            </a>
+
+                            <img src="/content/award.png" alt="booking award"
+                                 class="about-us__image about-us__image_name_award">
+
+                            <div class="display-flex space-between flex-middle">
+                                <div><img src="/content/koikago.png" alt="koikago"
+                                           class="about-us__image about-us__image_name_koikago"></div>
+
+                                <div><img src="/content/award-winner.png" alt="award winner"
+                                           class="about-us__image about-us__image_name_award-winner"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="about-us__block">
+                            <img src="/content/trip-advisor.jpg" alt="trip advisor"
+                                 class="about-us__image about-us__image_name_tripadvisor">
+
+                            <a href="https://www.tripadvisor.ru/" target="_blank">
+                                <span class="button button_color_green button_width_full button_size_lg">отзывы на tripadvisor</span>
+                            </a>
+
+                            <a href="https://www.tripadvisor.ru/" target="_blank">
+                                <span class="button button_color_green button_width_full button_size_lg">написать отзыв</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="about-us__block">
+                            <div class="about-us__image-area">
+                                <img src="/content/man-girl.png" alt="10 идей"
+                                     class="about-us__image about-us__image_name_man-girl">
+                                <p class="about-us__image-caption">Получи 10 идей, как<br>провести время в Казани</p>
+                            </div>
+
+                            <form class="form form_name_ideas">
+                                <input type="text" placeholder="ваше имя*" class="input form__input">
+                                <input type="email" placeholder="e-mail*" class="input form__input">
+                                <button class="button button_color_pink button_icon_lamp button_width_full button_size_lg"
+                                        data-type="ideas-done" type="submit">
+                                    <span class="dib vam">Получить 10 идей</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info">
+            <div class="section-header">
+                <h2 class="section-header__header">Хостел «Свои люди»</h2>
+                <div class="section-header__line"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text">Год назад 2 самых сильных хостела встретились, чтобы<br>
+                        учесть ошибки прошлого и создать самый продуманный и<br>
+                        самый клиентоориентированный хостел. И вот что у нас<br>
+                        получилось:</p>
+
+                    <ul class="icons">
+                        <li class="icons__item">
+                            <img src="/content/icons/design.png" alt="уникальный дизайн" class="icons__image">
+                            <p class="icons__caption">Уникальный<br>дизайн</p>
+                        </li>
+
+                        <li class="icons__item">
+                            <img src="/content/icons/map.png" alt="свои люди в центре казани" class="icons__image">
+                            <p class="icons__caption">«свои люди»<br>в центре казани</p>
+                        </li>
+
+                        <li class="icons__item">
+                            <img src="/content/icons/wifi.png" alt="скоростной wi-fi" class="icons__image">
+                            <p class="icons__caption">скоростной<br>wi-fi</p>
+                        </li>
+                    </ul>
+
+                    <p class="text">Заботясь о безопасности Гостей мы установили<br>
+                        современные системы видеонаблюдения. В каждой комнате<br>
+                        есть индивидуальные шкафчики, запирающиеся на ключ.</p>
+                </div>
+
+                <div class="col-md-6">
+                    <p class="text">Наши администраторы с легкостью подберут для Вас<br>
+                        маршрут от 2х дней до 2х недель, т.к. они проходят<br>
+                        специальное обучение по знанию города. Так что скучать<br>
+                        не придется. </p>
+
+                    <ul class="icons">
+                        <li class="icons__item">
+                            <img src="/content/icons/like.png" alt="лучший персонал" class="icons__image">
+                            <p class="icons__caption">лучший<br>персонал</p>
+                        </li>
+
+                        <li class="icons__item">
+                            <img src="/content/icons/mask.png" alt="татарские вечеринки" class="icons__image">
+                            <p class="icons__caption">татарские<br>вечеринки</p>
+                        </li>
+
+                        <li class="icons__item">
+                            <img src="/content/icons/sticker.png" alt="скидки от партнеров" class="icons__image">
+                            <p class="icons__caption">скидки<br>от партнеров</p>
+                        </li>
+                    </ul>
+
+                    <p class="text">А еще, для наших Гостей, мы попросили популярные кафе,<br>
+                        туроператоров и развлекательные центры о скидках (от 10%<br>
+                        до 50%).</p>
+                </div>
+            </div>
+
+            <div class="feedback">
+                <h3 class="feedback__header"><b>Напишите нам</b> прямо сейчас</h3>
+                <p class="text text_margin-top_5px">И мы подберем для Вас маршрут по Казани</p>
+                <button class="button button_color_pink button_icon_pencil button_size_lg" data-type="route">Написать
+                </button>
+            </div>
+        </section>
+
+        <section id="social" class="social-widgets">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="vk_widget" class="social-widgets__vk">
+                        <script type="text/javascript" src="//vk.com/js/api/openapi.js?139"></script>
+
+                        <!-- VK Widget -->
+                        <div id="vk_groups"></div>
+                        <script type="text/javascript">
+                            function VK_Widget_Init() {
+                                document.getElementById('vk_groups').innerHTML = "";
+                                var vk_width = document.getElementById('vk_widget').clientWidth;
+                                VK.Widgets.Group("vk_groups", {mode: 4, width: vk_width, wide: 1, height: "400"}, 135534341);
+                            }
+                            window.addEventListener('load', VK_Widget_Init, false);
+                            window.addEventListener('resize', VK_Widget_Init, false);
+                        </script>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="social-widgets__instagram">
+                        <h2>Виджет инстаграм</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts" class="address">
+            <div id="map" class="map"></div>
+
+            <div class="address__panel">
+                <div class="wrap">
+                    <div class="row">
+                        <div class="no-padding col-md-4">
+                            <div class="address__panel-wrap">
+                                <div class="section-header">
+                                    <h2 class="section-header__header section-header__header_font_sm">как нас
+                                        найти?</h2>
+                                    <div class="section-header__line"></div>
+                                </div>
+
+                                <ul class="address__detail">
+                                    <li class="text address__detail-item">По адресу: <span class="text_weight_500">Казань, ул. Лево-Булачная, 56</span>
+                                    </li>
+                                    <li class="text address__detail-item">По телефону: <span class="text_weight_500">8 800 000 0000</span>
+                                    </li>
+                                    <li class="text address__detail-item">В соц. сетях: <a href="javascript:;"
+                                                                                           class="address__detail-item_icon_vk"></a>
+                                    </li>
+                                </ul>
+
+                                <p class="text text_size_lg text_align_center text_margin_10px text_weight_500">Остались
+                                    вопросы?</p>
+
+                                <div class="address__button">
+                                    <button class="button button_color_pink" data-type="mail-question">Задать вопрос
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <span class="footer__text">Copyright &copy; 2017</span>
+        </footer>
+    </div>
+</div>
+
+<button class="button button_color_pink button_icon_pencil button_fixed">Отзывы</button>
+
+<div class="modal modal_type_call-question modal_hidden">
+    <div class="modal__close">
+        <button class="modal__close-button">&times;</button>
+    </div>
+
+    <h3 class="modal__header">
+        У Вас есть вопросы?<br>
+        <small class="modal__text">Мы с радостью перезвоним!</small>
+        <br>
+        <small class="modal__text modal__text_color_pink">обычно через 5-7 минут</small>
+    </h3>
+
+    <div class="modal__content">
+        <form class="modal__form">
+            <input type="text" placeholder="Имя" class="input modal__input">
+            <input type="text" placeholder="Номер телефона*" class="input modal__input">
+            <input type="text" placeholder="Удобное время для звонка*" class="input modal__input">
+            <textarea class="input modal__input modal__input_type_textarea" placeholder="Комментарий"></textarea>
+
+            <div class="modal__button-wrap">
+                <button class="button button_color_pink modal__button" type="submit" data-type="reserve-done">
+                    Отправить
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal modal_type_mail-question modal_hidden">
+    <div class="modal__close">
+        <button class="modal__close-button">&times;</button>
+    </div>
+
+    <h3 class="modal__header">
+        У Вас есть вопросы?<br>
+        <small class="modal__text">Мы с радостью ответим!</small>
+        <br>
+        <small class="modal__text modal__text_color_pink">обычно через 5-7 минут</small>
+    </h3>
+
+    <div class="modal__content">
+        <form class="modal__form">
+            <input type="text" placeholder="Имя" class="input modal__input">
+            <input type="text" placeholder="Номер телефона*" class="input modal__input">
+            <input type="text" placeholder="Удобное время для звонка*" class="input modal__input">
+            <textarea class="input modal__input modal__input_type_textarea" placeholder="Комментарий"></textarea>
+
+            <div class="modal__button-wrap">
+                <button class="button button_color_pink modal__button" type="submit" data-type="reserve-done">
+                    Отправить
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal modal_type_reserve modal_hidden">
+    <div class="modal__close">
+        <button class="modal__close-button">&times;</button>
+    </div>
+
+    <h3 class="modal__header">
+        Хотите забронировать?<br>
+        <small class="modal__text">Осталось уточнить несколько моментов</small>
+        <br>
+        <small class="modal__text modal__text_color_pink">и мы уже бежим застилать постель ;))</small>
+    </h3>
+
+    <div class="modal__content">
+        <form class="modal__form">
+            <div class="row">
+                <div class="col-md-7">
+                    <input type="text" placeholder="Имя*" class="input modal__input">
+                    <input type="text" placeholder="Номер телефона*" class="input modal__input">
+                    <input type="text" placeholder="Когда хотите приехать?" class="input modal__input">
+                </div>
+
+                <div class="col-md-5">
+                    <p class="text no-margin">
+                        Поделитесь с друзьями и получите<br>
+                        <span class="segoe-text text_color_pink">скидку 5%</span><br>
+                        <a href="https://vk.com/" target="_blank">
+                            <img src="/content/vk-icon-color.png" alt="Вконтакте">
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="modal__button-wrap">
+                <button class="button button_color_pink modal__button" type="submit">Отправить</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal modal_type_route modal_hidden">
+    <div class="modal__close">
+        <button class="modal__close-button">&times;</button>
+    </div>
+
+    <h3 class="modal__header">
+        Напишите нам прямо сейчас,<br>
+        <small class="modal__text">и мы расскажем куда еще можно сходить в Казани</small>
+    </h3>
+
+    <div class="modal__content">
+        <form class="modal__form">
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="text" placeholder="Имя*" class="input modal__input">
+                    <input type="text" placeholder="Номер телефона*" class="input modal__input">
+                    <input type="text" placeholder="E-mail" class="input modal__input">
+                </div>
+
+                <div class="col-md-6">
+                    <p class="no-margin">
+                        <span class="segoe-text text_color_pink">А Вы знали,</span><br>
+                        <span class="segoe-text segoe-text_size_small">что когда Иван IV Грозный готовил
 								взятие Казани, то основал базу на
 								острове-граде Свияжск. А спустя 3
 								века этот остров стал
 								прототипом острова Буяна из
 								сказки Пушкина А.С.</span>
-							</p>
-						</div>
-					</div>
+                    </p>
+                </div>
+            </div>
 
-					<div class="modal__button-wrap">
-						<button class="button button_color_pink modal__button" type="button">Отправить</div>
-					</div>
-				</form>
-			</div>
-		</div>
+            <div class="modal__button-wrap">
+                <button class="button button_color_pink modal__button" type="submit">Отправить</button>
+            </div>
+        </form>
+    </div>
+</div>
 
-		<div class="modal modal_type_reserve-done modal_hidden">
-			<div class="modal__close">
-				<button class="modal__close-button">&times;</button>
-			</div>
+<div class="modal modal_type_reserve-done modal_hidden">
+    <div class="modal__close">
+        <button class="modal__close-button">&times;</button>
+    </div>
 
-			<h3 class="modal__header">
-				Спасибо!<br>
-				<small class="modal__text">Мы свяжемся с Вами в течении 7 минут</small>
-			</h3>
+    <h3 class="modal__header">
+        Спасибо!<br>
+        <small class="modal__text">Мы свяжемся с Вами в течении 7 минут</small>
+    </h3>
 
-			<div class="modal__content modal__content_reserve-done">
-				P.S. Если вдруг мы не перезвонили,<br>то звоните:<br>
-				<span class="text_size_extra-lg text_weight_500">8 800 000 0000</span><br>
-				ЭТО БЕСПЛАТНО!
-			</div>
-		</div>
+    <div class="modal__content modal__content_reserve-done">
+        P.S. Если вдруг мы не перезвонили,<br>то звоните:<br>
+        <span class="text_size_extra-lg text_weight_500">8 800 000 0000</span><br>
+        ЭТО БЕСПЛАТНО!
+    </div>
+</div>
 
-		<div class="modal modal_type_ideas-done modal_hidden">
-			<div class="modal__close">
-				<button class="modal__close-button">&times;</button>
-			</div>
+<div class="modal modal_type_ideas-done modal_hidden">
+    <div class="modal__close">
+        <button class="modal__close-button">&times;</button>
+    </div>
 
-			<h3 class="modal__header modal__header_align_left">
-				Спасибо!<br>
-				<small class="text">Сейчас Вам осталось подтвердить<br>
-				свой e-mail и <span class="text_color_pink">начать паковать<br>
+    <h3 class="modal__header modal__header_align_left">
+        Спасибо!<br>
+        <small class="text">Сейчас Вам осталось подтвердить<br>
+            свой e-mail и <span class="text_color_pink">начать паковать<br>
 				чемоданы ;)</span></small>
-			</h3>
+    </h3>
 
-			<div class="modal__content">
-				<div class="modal__button-wrap modal__button-wrap_align_left">
-					<button class="button button_color_pink text modal_button modal__button_type_ideas-done">Продолжить бронирование</div>
-				</div>
+    <div class="modal__content">
+        <div class="modal__button-wrap modal__button-wrap_align_left">
+            <button class="button button_color_pink text modal_button modal__button_type_ideas-done">Продолжить
+                бронирование
+        </div>
+    </div>
 
-				<p class="ideas-done__text text">
+    <p class="ideas-done__text text">
 					<span>Расскажи друзьям про<br>
 					10 идей путешествия<br>
 					по Казани</span>
 
-					<a href="https://vk.com/" target="_blank">
-						<img src="/content/vk-icon-color.png" alt="Вконтакте">
-					</a>
-				</p>
-			</div>
-		</div>
+        <a href="https://vk.com/" target="_blank">
+            <img src="/content/vk-icon-color.png" alt="Вконтакте">
+        </a>
+    </p>
+</div>
 
-	    <script src="/js/jquery/jquery.min.js"></script>
-	    <script src="/js/plugins/slick/slick.min.js"></script>
-		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrxL1ceZi5yy_JNoqsLrPqcxtYhuw2aF0&callback=initMap"></script>
-	    <script src="/js/common.js"></script>
-		<script type="text/javascript">
-			var map;
-			var myLatLng = {lat: 55.785457, lng: 49.1138833};
+<script src="/js/jquery/jquery.min.js"></script>
+<script src="/js/plugins/owl.carousel/dist/owl.carousel.min.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrxL1ceZi5yy_JNoqsLrPqcxtYhuw2aF0&callback=initMap"></script>
+<script src="/js/common.js"></script>
+<script type="text/javascript">
+    var map;
+    var myLatLng = {lat: 55.785457, lng: 49.1138833};
 
-			function initMap() {
-				map = new google.maps.Map(document.getElementById('map'), {
-					center: myLatLng,
-					zoom: 16,
-					disableDefaultUI: true
-				});
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: myLatLng,
+            zoom: 16,
+            disableDefaultUI: true
+        });
 
-				var marker = new google.maps.Marker({
-					position: myLatLng,
-					map: map,
-				});
-			}
-		</script>
-  	</body>
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+        });
+    }
+</script>
+</body>
 </html>

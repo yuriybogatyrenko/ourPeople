@@ -1,29 +1,23 @@
 $(function(){
 	// Основной слайдер
-	$('.slider').slick({
+	$('.slider').owlCarousel({
 		autoplay: true,
 		autoplaySpeed: 3000,
 		arrows: false,
-		dots: true
+		dots: true,
+		items: 1
 	});
 
 	// Слайдер для фото комнат
 	var sliderParams = {
 		autoplay: false,
 		autoplaySpeed: 3000,
-		arrows: true,
-		dots: false
+		nav: true,
+		dots: false,
+		items: 1
 	};
 
-	$('.glr-1').slick(sliderParams);
-	$('.glr-2').slick(sliderParams);
-	$('.glr-3').slick(sliderParams);
-	$('.glr-4').slick(sliderParams);
-	$('.glr-5').slick(sliderParams);
-	$('.glr-6').slick(sliderParams);
-	$('.glr-7').slick(sliderParams);
-	$('.glr-8').slick(sliderParams);
-	$('.glr-9').slick(sliderParams);
+	$('.glr-1, .glr-2, .glr-3, .glr-4, .glr-5, .glr-6, .glr-7, .glr-8, .glr-9').owlCarousel(sliderParams);
 
 	// Переключение типов комнат
 	$('.rooms__type').click(function(){
@@ -51,11 +45,11 @@ $(function(){
 	// Вызов модального окна
 	$('.button').click(function(){
 		var modalType = $(this).data('type');
-		console.log(modalType);
 
 		if(modalType)
 		{
-			$('body').addClass('overflow-hidden').append('<div class="modal-bg"></div>');
+			$('html').addClass('overflow-hidden')
+			$('body').css('overflow-y', 'scroll').append('<div class="modal-bg"></div>');
 
 			$('.modal').removeClass('modal_visible').addClass('modal_hidden');
 			$('.modal_type_' + modalType).removeClass('modal_hidden').addClass('modal_visible');
@@ -65,8 +59,27 @@ $(function(){
 	// Скрытие модального окна
 	$(document).on('click', '.modal-bg, .modal__close-button, .modal__button_type_ideas-done', function(){
 		$('.modal-bg').remove();
-		$('body').removeClass('overflow-hidden');
+		$('html').removeClass('overflow-hidden');
+		$('body').css('overflow-y', 'initial')
 
 		$('.modal').removeClass('modal_visible').addClass('modal_hidden');
+	});
+
+	$('form').submit(function (e) {
+		e.preventDefault();
+
+		console.log('submit');
+	});
+
+	$('.mobile-menu__icon').click(function (e) {
+		e.preventDefault();
+
+		$('.menu').toggleClass('menu-mobile-active');
+	});
+
+	$('.js-close-mobile-menu').click(function (e) {
+		e.preventDefault();
+
+		$('.menu').toggleClass('menu-mobile-active');
 	});
 });
