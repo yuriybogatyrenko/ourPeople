@@ -195,7 +195,7 @@ body {
 	width: 18px;
 	height: 29px;
 	margin: -6px 0 0 15px;
-	background: url('/images/button-icon-sprite.png') no-repeat -5px -45px;
+	background: url('../images/button-icon-sprite.png') no-repeat -5px -45px;
 }
 
 .button_icon_pencil:after {
@@ -205,7 +205,7 @@ body {
 	width: 30px;
 	height: 30px;
 	margin: -7px 0 0 23px;
-	background: url('/images/button-icon-sprite.png') no-repeat -79px -5px;
+	background: url('../images/button-icon-sprite.png') no-repeat -79px -5px;
 }
 
 .button_icon_lamp {
@@ -219,7 +219,7 @@ body {
 	width: 25px;
 	height: 38px;
 	/*margin: -5px 0 0 23px;*/
-	background: url('/images/button-icon-sprite.png') no-repeat -44px -5px;
+	background: url('../images/button-icon-sprite.png') no-repeat -44px -5px;
 }
 
 .button_icon_key {
@@ -233,7 +233,7 @@ body {
 	width: 29px;
 	height: 27px;
 	margin: -5px 0 0 15px;
-	background: url('/images/button-icon-sprite.png') no-repeat -5px -5px;
+	background: url('../images/button-icon-sprite.png') no-repeat -5px -5px;
 }
 
 .button_fixed:after {
@@ -324,31 +324,31 @@ body {
 .slider__caption_num_1 {
 	width: 398px;
 	height: 257px;
-	background: url('/content/slider/slide-1-bg.png') no-repeat right top;
+	background: url('../content/slider/slide-1-bg.png') no-repeat right top;
 }
 
 .slider__caption_num_2 {
 	width: 398px;
 	height: 257px;
-	background: url('/content/slider/slide-2-bg.png') no-repeat right top;
+	background: url('../content/slider/slide-2-bg.png') no-repeat right top;
 }
 
 .slider__caption_num_3 {
 	width: 478px;
 	height: 216px;
-	background: url('/content/slider/slide-3-bg.png') no-repeat right top;
+	background: url('../content/slider/slide-3-bg.png') no-repeat right top;
 }
 
 .slider__caption_num_4 {
 	width: 478px;
 	height: 216px;
-	background: url('/content/slider/slide-4-bg.png') no-repeat right top;
+	background: url('../content/slider/slide-4-bg.png') no-repeat right top;
 }
 
 .slider__caption_num_5 {
 	width: 394px;
 	height: 251px;
-	background: url('/content/slider/slide-5-bg.png') no-repeat right top;
+	background: url('../content/slider/slide-5-bg.png') no-repeat right top;
 }
 
 .slider__header {
@@ -415,12 +415,12 @@ body {
 }
 
 .owl-prev {
-	background: url('/content/prev.png') no-repeat 0 0 transparent;
+	background: url('../content/prev.png') no-repeat 0 0 transparent;
 	left: 10px;
 }
 
 .owl-next {
-	background: url('/content/next.png') no-repeat 0 0 transparent;
+	background: url('../content/next.png') no-repeat 0 0 transparent;
 	right: 10px;
 }
 
@@ -485,31 +485,31 @@ body {
 .rooms__counters-icon_type_people {
 	width: 66px;
 	height: 45px;
-	background: url('/content/people-count.png') no-repeat left center;
+	background: url('../content/people-count.png') no-repeat left center;
 }
 
 .rooms__counters-icon_type_bed {
 	width: 48px;
 	height: 40px;
-	background: url('/content/bed-count.png') no-repeat left center;
+	background: url('../content/bed-count.png') no-repeat left center;
 }
 
 .rooms__counters-icon_type_chair {
 	width: 56px;
 	height: 40px;
-	background: url('/content/chair-count.png') no-repeat left center;
+	background: url('../content/chair-count.png') no-repeat left center;
 }
 
 .rooms__counters-icon_type_double-bed {
 	width: 55px;
 	height: 40px;
-	background: url('/content/double-bed-count.png') no-repeat left center;
+	background: url('../content/double-bed-count.png') no-repeat left center;
 }
 
 .rooms__counters-icon_type_sofa {
 	width: 65px;
 	height: 40px;
-	background: url('/content/sofa-count.png') no-repeat left center;
+	background: url('../content/sofa-count.png') no-repeat left center;
 }
 
 .rooms__types-list {
@@ -540,7 +540,7 @@ body {
 }
 
 .rooms__type_name_jeans.rooms__type_active, .rooms__type_name_jeans:hover {
-	background: url('/content/jeans.jpg') repeat 0 0;
+	background: url('../content/jeans.jpg') repeat 0 0;
 }
 
 .rooms__type_name_blue.rooms__type_active, .rooms__type_name_blue:hover {
@@ -569,7 +569,7 @@ body {
 }
 
 .rooms__type_name_vip.rooms__type_active, .rooms__type_name_vip:hover {
-	background: url('/content/gold.jpg') repeat 0 0;
+	background: url('../content/gold.jpg') repeat 0 0;
 	color: #434343;
 }
 
@@ -665,7 +665,7 @@ body {
 	width: 77px;
 	height: 26px;
 	content: '';
-	background: url('/content/arrow.jpg') no-repeat left top;
+	background: url('../content/arrow.jpg') no-repeat left top;
 }
 
 .instructions_position_last:after {
@@ -805,7 +805,7 @@ body {
 	width: 35px;
 	height: 35px;
 	margin-left: 5px;
-	background: url('/content/vk-icon.png') no-repeat 0 0;
+	background: url('../content/vk-icon.png') no-repeat 0 0;
 }
 
 .address__button {
@@ -851,25 +851,21 @@ body {
 
 .modal_type_reserve {
 	max-width: 610px;
-	margin-left: -305px;
 }
 
 .modal_type_route {
 	max-width: 670px;
-	margin-left: -335px;
 }
 
 .modal_type_reserve-done {
 	padding: 40px 0 0 0;
 	max-width: 470px;
-	margin-left: -235px;
 }
 
 .modal_type_ideas-done {
 	max-width: 535px;
-	margin-left: -267.5px;
 	padding-bottom: 10px;
-	background: url('/content/girl.jpg') no-repeat right bottom #FFF;
+	background: url('../content/girl.jpg') no-repeat right bottom #FFF;
 }
 
 .modal_visible {
@@ -922,7 +918,7 @@ body {
 	padding-top: 35px;
 	box-sizing: border-box;
 	text-align: center;
-	background: url('/content/reserve-done-bg.jpg') no-repeat 0 0;
+	background: url('../content/reserve-done-bg.jpg') no-repeat 0 0;
 	color: #FFF;
 	font-size: 22px;
 	font-weight: 300;
@@ -983,7 +979,7 @@ body {
 	height: 55px;
 	top: calc(50% - 27px);
 	right: 0;
-	background: url('/content/vk-icon-color.png') no-repeat 0 0;
+	background: url('../content/vk-icon-color.png') no-repeat 0 0;
 }
 
 .modal-bg {

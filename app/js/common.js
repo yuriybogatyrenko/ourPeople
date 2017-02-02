@@ -68,7 +68,21 @@ $(function(){
 	$('form').submit(function (e) {
 		e.preventDefault();
 
-		console.log('submit');
+		var form = $(this),
+			action = form.attr('action'),
+			formData = form.serialize();
+
+		$.post(action, formData).done(function (data) {
+			var response = $.parseJSON(data);
+			console.log(response)
+			if(response.done == true) {
+				$('html').addClass('overflow-hidden')
+				$('body').css('overflow-y', 'scroll').append('<div class="modal-bg"></div>');
+
+				$('.modal').removeClass('modal_visible').addClass('modal_hidden');
+				$('.modal_type_'+response.modal).removeClass('modal_hidden').addClass('modal_visible');
+			}
+		});
 	});
 
 	$('.mobile-menu__icon').click(function (e) {
