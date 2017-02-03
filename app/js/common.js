@@ -39,6 +39,9 @@ $(function(){
 		   	top = $(id).offset().top;
 
 		  	$('body, html').animate({scrollTop: top}, 700);
+			if($('.menu-mobile-active').length > 0) {
+				$('.menu-mobile-active').removeClass('menu-mobile-active');
+			}
 	   	});
 	});
 
@@ -48,8 +51,8 @@ $(function(){
 
 		if(modalType)
 		{
-			$('html').addClass('overflow-hidden')
-			$('body').css('overflow-y', 'scroll').append('<div class="modal-bg"></div>');
+			$('html').addClass('overflow-hidden modal-open');
+			$('body').css('overflow-y', 'scroll');
 
 			$('.modal').removeClass('modal_visible').addClass('modal_hidden');
 			$('.modal_type_' + modalType).removeClass('modal_hidden').addClass('modal_visible');
@@ -58,9 +61,8 @@ $(function(){
 
 	// Скрытие модального окна
 	$(document).on('click', '.modal-bg, .modal__close-button, .modal__button_type_ideas-done', function(){
-		$('.modal-bg').remove();
-		$('html').removeClass('overflow-hidden');
-		$('body').css('overflow-y', 'initial')
+		$('html').removeClass('overflow-hidden modal-open');
+		$('body').css('overflow-y', 'initial');
 
 		$('.modal').removeClass('modal_visible').addClass('modal_hidden');
 	});
@@ -76,8 +78,8 @@ $(function(){
 			var response = $.parseJSON(data);
 			console.log(response)
 			if(response.done == true) {
-				$('html').addClass('overflow-hidden')
-				$('body').css('overflow-y', 'scroll').append('<div class="modal-bg"></div>');
+				$('html').addClass('overflow-hidden modal-open')
+				$('body').css('overflow-y', 'scroll');
 
 				$('.modal').removeClass('modal_visible').addClass('modal_hidden');
 				$('.modal_type_'+response.modal).removeClass('modal_hidden').addClass('modal_visible');
@@ -96,4 +98,6 @@ $(function(){
 
 		$('.menu').toggleClass('menu-mobile-active');
 	});
+
+	$('input[name="phone"]').mask('+7 (999) 999-99-99');
 });

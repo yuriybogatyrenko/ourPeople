@@ -874,10 +874,10 @@
 
                             <div class="display-flex space-between flex-middle">
                                 <div><img src="content/koikago.png" alt="koikago"
-                                           class="about-us__image about-us__image_name_koikago"></div>
+                                          class="about-us__image about-us__image_name_koikago"></div>
 
                                 <div><img src="content/award-winner.png" alt="award winner"
-                                           class="about-us__image about-us__image_name_award-winner"></div>
+                                          class="about-us__image about-us__image_name_award-winner"></div>
                             </div>
                         </div>
                     </div>
@@ -907,9 +907,11 @@
 
                             <form action="mail.php" class="form form_name_ideas">
                                 <input type="text" name="name" placeholder="ваше имя*" class="input form__input">
-                                <input type="email" name="email" required placeholder="e-mail*" class="input form__input">
+                                <input type="email" name="email" required placeholder="e-mail*"
+                                       class="input form__input">
+                                <input type="hidden" name="modal" value="ideas-done">
                                 <button class="button button_color_pink button_icon_lamp button_width_full button_size_lg"
-                                        data-type="ideas-done" type="submit">
+                                        type="submit">
                                     <span class="dib vam">Получить 10 идей</span>
                                 </button>
                             </form>
@@ -1003,7 +1005,12 @@
                             function VK_Widget_Init() {
                                 document.getElementById('vk_groups').innerHTML = "";
                                 var vk_width = document.getElementById('vk_widget').clientWidth;
-                                VK.Widgets.Group("vk_groups", {mode: 4, width: vk_width, wide: 1, height: "400"}, 135534341);
+                                VK.Widgets.Group("vk_groups", {
+                                    mode: 4,
+                                    width: vk_width,
+                                    wide: 1,
+                                    height: "400"
+                                }, 135534341);
                             }
                             window.addEventListener('load', VK_Widget_Init, false);
                             window.addEventListener('resize', VK_Widget_Init, false);
@@ -1063,7 +1070,8 @@
     </div>
 </div>
 
-<a href="https://vk.com/topic-135534341_34741038" target="_blank" class="button button_color_pink button_icon_pencil button_fixed">Отзывы</a>
+<a href="https://vk.com/topic-135534341_34741038" target="_blank"
+   class="button button_color_pink button_icon_pencil button_fixed">Отзывы</a>
 
 <div class="modal modal_type_call-question modal_hidden">
     <div class="modal__close">
@@ -1082,7 +1090,9 @@
             <input type="text" name="name" placeholder="Имя" class="input modal__input">
             <input type="text" name="phone" required placeholder="Номер телефона*" class="input modal__input">
             <input type="text" name="time" placeholder="Удобное время для звонка*" class="input modal__input">
-            <textarea name="comment" class="input modal__input modal__input_type_textarea" placeholder="Комментарий"></textarea>
+            <input type="hidden" name="modal" value="reserve-done">
+            <textarea name="comment" class="input modal__input modal__input_type_textarea"
+                      placeholder="Комментарий"></textarea>
 
             <div class="modal__button-wrap">
                 <button class="button button_color_pink modal__button" type="submit">
@@ -1110,10 +1120,12 @@
             <input type="text" name="name" placeholder="Имя" class="input modal__input">
             <input type="text" name="phone" required placeholder="Номер телефона*" class="input modal__input">
             <input type="text" name="time" placeholder="Удобное время для звонка*" class="input modal__input">
-            <textarea name="comment" class="input modal__input modal__input_type_textarea" placeholder="Комментарий"></textarea>
+            <input type="hidden" name="modal" value="reserve-done">
+            <textarea name="comment" class="input modal__input modal__input_type_textarea"
+                      placeholder="Комментарий"></textarea>
 
             <div class="modal__button-wrap">
-                <button class="button button_color_pink modal__button" type="submit" data-type="reserve-done">
+                <button class="button button_color_pink modal__button" type="submit">
                     Отправить
                 </button>
             </div>
@@ -1140,6 +1152,7 @@
                     <input type="text" name="name" placeholder="Имя*" class="input modal__input">
                     <input type="text" name="phone" required placeholder="Номер телефона*" class="input modal__input">
                     <input type="text" name="time" placeholder="Когда хотите приехать?" class="input modal__input">
+                    <input type="hidden" name="modal" value="reserve-done">
                 </div>
 
                 <div class="col-md-5">
@@ -1177,7 +1190,7 @@
                     <input type="text" name="name" placeholder="Имя*" class="input modal__input">
                     <input type="text" name="phone" required placeholder="Номер телефона*" class="input modal__input">
                     <input type="text" name="email" placeholder="E-mail" class="input modal__input">
-                    <input type="hidden" name="modalname" value="reserve-done">
+                    <input type="hidden" name="modal" value="reserve-done">
                 </div>
 
                 <div class="col-md-6">
@@ -1247,7 +1260,10 @@
     </p>
 </div>
 
+<div class="modal-bg"></div>
+
 <script src="js/jquery/jquery.min.js"></script>
+<script src="js/input.mask.js"></script>
 <script src="js/plugins/owl.carousel/dist/owl.carousel.min.js"></script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrxL1ceZi5yy_JNoqsLrPqcxtYhuw2aF0&callback=initMap"></script>

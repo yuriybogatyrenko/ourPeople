@@ -16,9 +16,11 @@ if ($_POST["name"] && $_POST["name"] != '') {
 
 if ($_POST["phone"] && $_POST["phone"] != '') {
     $message .= '<p>Телефон клиента: ' . $_POST["phone"] . '</p>';
-} else {
+}
+
+if((isset($_POST['phone']) && $_POST['phone'] == '') || (isset($_POST['mail']) && $_POST["email"] = '')) {
     $error = true;
-    $errorText .= 'Введите номер телефона';
+    $errorText .= 'Введите номер телефона или email';
 }
 
 if ($_POST["time"] && $_POST["time"] != '') {
@@ -37,7 +39,7 @@ if ($error) {
     $response = array('done' => false, 'error' => $errorText);
     echo json_encode($response);
 } elseif (mail($to, $subject, $message, $headers) && !$error) {
-    $response = array('done' => true);
+    $response = array('done' => true, 'modal' => $_POST['modal']);
     echo json_encode($response);
 } else {
     echo 'php error';

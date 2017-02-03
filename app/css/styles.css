@@ -1,3 +1,12 @@
+html.modal-open {
+	overflow: hidden;
+}
+
+html.modal-open .modal-bg {
+	visibility: visible;
+	opacity: 1;
+}
+
 body {
 	font-family: 'MuseoSansCyrl', sans-serif;
 	color: #434343;
@@ -36,6 +45,7 @@ body {
 	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
+	min-width: 320px;
 }
 
 .no-padding {
@@ -990,6 +1000,13 @@ body {
 	height: 100%;
 	background: rgba(0, 0, 0, 0.6);
 	z-index: 3000;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
 
 .rooms__right-side {
@@ -1166,11 +1183,6 @@ body {
 	.header > .row {
 		display: flex;
 		align-items: center;
-	}
-
-	.button {
-		padding-left: 5px;
-		padding-right: 5px;
 	}
 
 	.form_name_ideas {
