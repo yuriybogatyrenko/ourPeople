@@ -32,7 +32,7 @@ $(function(){
 
 	// Скроллинг при навигации
 	$(document).ready(function(){
-	   	$(".menu__link").click(function (event) {
+	   	$("[data-scroll-to]").click(function (event) {
 		   	event.preventDefault();
 
 		   	var id  = $(this).attr('href'),

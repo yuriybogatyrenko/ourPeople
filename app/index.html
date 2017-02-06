@@ -44,7 +44,7 @@
                         <div class="col-md-4 col-sm-4">
                             <address class="contacts">
                                 <span class="contacts__phone">8 800 000 0000</span>
-                                <span class="contacts__address">г. Казань, Лево-Булачная д. 56</span>
+                                <a href="#contacts" data-scroll-to class="contacts__address">г. Казань, Лево-Булачная д. 56</a>
                             </address>
                         </div>
                     </div>
@@ -55,11 +55,11 @@
                                 <div class="mobile-menu__icon-line"></div>
                             </div>
                             <nav class="menu">
-                                <a href="#rooms" class="menu__link">Наши номера</a>
-                                <a href="#how-to-settle" class="menu__link">Как заселиться?</a>
-                                <a href="#about" class="menu__link">О хостеле</a>
-                                <a href="#social" class="menu__link">Мы в соц.сетях</a>
-                                <a href="#contacts" class="menu__link">Контакты</a>
+                                <a data-scroll-to href="#rooms" class="menu__link">Наши номера</a>
+                                <a data-scroll-to href="#how-to-settle" class="menu__link">Как заселиться?</a>
+                                <a data-scroll-to href="#about" class="menu__link">О хостеле</a>
+                                <a data-scroll-to href="#social" class="menu__link">Мы в соц.сетях</a>
+                                <a data-scroll-to href="#contacts" class="menu__link">Контакты</a>
 
                                 <i class="js-close-mobile-menu visible-xs"></i>
                             </nav>
@@ -855,7 +855,7 @@
             </div>
         </section>
 
-        <section id="about" class="about-us">
+        <section class="about-us">
             <div class="section-header">
                 <h2 class="section-header__header">О нас говорят</h2>
                 <div class="section-header__line"></div>
@@ -921,7 +921,7 @@
             </div>
         </section>
 
-        <section class="info">
+        <section id="about" class="info">
             <div class="section-header">
                 <h2 class="section-header__header">Хостел «Свои люди»</h2>
                 <div class="section-header__line"></div>
@@ -1089,7 +1089,7 @@
         <form action="mail.php" class="modal__form">
             <input type="text" name="name" placeholder="Имя" class="input modal__input">
             <input type="text" name="phone" required placeholder="Номер телефона*" class="input modal__input">
-            <input type="text" name="time" placeholder="Удобное время для звонка*" class="input modal__input">
+            <input type="text" name="time" placeholder="Удобное время для звонка" class="input modal__input">
             <input type="hidden" name="modal" value="reserve-done">
             <textarea name="comment" class="input modal__input modal__input_type_textarea"
                       placeholder="Комментарий"></textarea>
@@ -1119,7 +1119,7 @@
         <form action="mail.php" class="modal__form">
             <input type="text" name="name" placeholder="Имя" class="input modal__input">
             <input type="text" name="phone" required placeholder="Номер телефона*" class="input modal__input">
-            <input type="text" name="time" placeholder="Удобное время для звонка*" class="input modal__input">
+            <input type="text" name="time" placeholder="Удобное время для звонка" class="input modal__input">
             <input type="hidden" name="modal" value="reserve-done">
             <textarea name="comment" class="input modal__input modal__input_type_textarea"
                       placeholder="Комментарий"></textarea>

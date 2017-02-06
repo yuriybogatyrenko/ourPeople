@@ -254,9 +254,10 @@ body {
 	text-align: right;
 }
 
-.contacts__phone, .contacts__address {
+.contacts__phone, .contacts__address, .contacts__address:hover {
 	font-style: normal;
-
+	color: #000;
+	text-decoration: none;
 }
 
 .contacts__phone {
