@@ -228,12 +228,7 @@ body {
 	content: '';
 	width: 25px;
 	height: 38px;
-	/*margin: -5px 0 0 23px;*/
 	background: url('../images/button-icon-sprite.png') no-repeat -44px -5px;
-}
-
-.button_icon_key {
-	/*padding-top: 3px;*/
 }
 
 .button_icon_key:after {
