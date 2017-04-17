@@ -18,7 +18,7 @@ if ($_POST["phone"] && $_POST["phone"] != '') {
     $message .= '<p>Телефон клиента: ' . $_POST["phone"] . '</p>';
 }
 
-if((isset($_POST['phone']) && $_POST['phone'] == '') || (isset($_POST['mail']) && $_POST["email"] = '')) {
+if ((isset($_POST['phone']) && $_POST['phone'] == '') || (isset($_POST['mail']) && $_POST["email"] = '')) {
     $error = true;
     $errorText .= 'Введите номер телефона или email';
 }
