@@ -1,7 +1,7 @@
 <?php
 
 // reciever
-$to = 'slhostel2017@gmail.com';
+$to = 'HSLkazan@gmail.com';
 $subject = 'Our People';
 $error = false;
 $errorText = '';
