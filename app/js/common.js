@@ -76,13 +76,14 @@ $(function(){
 
 		$.post(action, formData).done(function (data) {
 			var response = $.parseJSON(data);
-			console.log(response)
 			if(response.done == true) {
 				$('html').addClass('overflow-hidden modal-open')
 				$('body').css('overflow-y', 'scroll');
 
 				$('.modal').removeClass('modal_visible').addClass('modal_hidden');
 				$('.modal_type_'+response.modal).removeClass('modal_hidden').addClass('modal_visible');
+
+                yaCounter44768188.reachGoal('send_order');
 			}
 		});
 	});
