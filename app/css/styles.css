@@ -564,21 +564,16 @@ body {
 	display: -webkit-flex;
 	display: -moz-box;
 	display: flex;
-	-ms-flex-flow: row wrap;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-flow: row wrap;
-	-moz-box-orient: horizontal;
-	-moz-box-direction: normal;
-	flex-flow: row wrap;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .rooms__type {
-	-webkit-box-flex: 1;
-	-webkit-flex: 1;
-	-moz-box-flex: 1;
-	-ms-flex: 1;
-	flex: 1;
+	/*-webkit-box-flex: 1;*/
+	/*-webkit-flex: 1;*/
+	/*-moz-box-flex: 1;*/
+	/*-ms-flex: 1;*/
+	/*flex: 1;*/
 	padding: 10px;
 	margin: 0 2px 3px;
 	text-transform: uppercase;
@@ -586,6 +581,8 @@ body {
 	border: 1px solid #4e4e4e;
 	font-size: 16px;
 	cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .rooms__type_active, .rooms__type:hover {
