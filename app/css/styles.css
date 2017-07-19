@@ -1295,3 +1295,48 @@ body {
 		font-size: 32px;
 	}
 }
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.confidential ol {
+    counter-reset: item;
+}
+
+.confidential li {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.confidential li:last-child {
+    margin-bottom: 0;
+}
+
+.confidential li > ol {
+    margin-top: 10px;
+}
+
+.confidential li:before {
+    content: counters(item, ".") ". ";
+    counter-increment: item
+}
+
+.modal__checkbox-label {
+    cursor: pointer;
+}
+
+.pink-link {
+    color: #F93261;
+    text-decoration: underline;
+}
+
+.pink-link:hover, .pink-link:active {
+    text-decoration: none;
+    color: #F93261;
+}
+
+.modal__checkbox-wrap {
+    margin-bottom: 10px;
+    text-align: left;
+}

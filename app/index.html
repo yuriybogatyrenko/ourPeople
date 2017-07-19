@@ -922,6 +922,12 @@
                                 <input type="email" name="email" required placeholder="e-mail*"
                                        class="input form__input">
                                 <input type="hidden" name="modal" value="ideas-done">
+                                <div class="modal__checkbox-wrap">
+                                    <label class="modal__checkbox-label">
+                                        <input type="checkbox">
+                                        <span>Я согласен на обработку персональных данных в соответствии с условиями </span><span><a class="pink-link" target="_blank" href="confidential.html">политики конфиденциальности</a></span>
+                                    </label>
+                                </div>
                                 <button class="button button_color_pink button_icon_lamp button_width_full button_size_lg"
                                         type="submit">
                                     <span class="dib vam">Получить 10 идей</span>
@@ -998,10 +1004,10 @@
             </div>
 
             <div class="row" style="display: flex; align-items: center; flex-wrap: wrap;">
-                <div class="col-md-4 col-xs-12 text-right">
+                <div class="col-md-3 col-xs-12 text-right">
                     <img src="images/namas.jpeg" style="max-width: 100%" alt="">
                 </div>
-                <div class="col-md-8 col-xs-12 text">
+                <div class="col-md-9 col-xs-12 text">
                     По запросу наших гостей исповедующих Ислам, администратор, Бесплатно предоставляет набор путника. В набор входит: Коран, коврик для Намаза. Так же в Нашем Хостеле, в номере и на стойке ресепшн для удобства гостей установлены указатели, с помощью которых можно установить в какой стороне находится Кибла.
                 </div>
             </div>
@@ -1048,7 +1054,9 @@
         </section>
 
         <section id="contacts" class="address">
-            <div id="map" class="map"></div>
+            <div class="map">
+                <iframe src="https://yandex.kz/map-widget/v1/-/CBQwuCQTPB"  frameborder="0" style="width: 100%; height: 480px;"></iframe>
+            </div>
 
             <div class="address__panel">
                 <div class="wrap">
@@ -1114,7 +1122,12 @@
             <input type="hidden" name="modal" value="reserve-done">
             <textarea name="comment" class="input modal__input modal__input_type_textarea"
                       placeholder="Комментарий"></textarea>
-
+            <div class="modal__checkbox-wrap">
+                <label class="modal__checkbox-label">
+                    <input type="checkbox">
+                    <span>Я согласен на обработку персональных данных в соответствии с условиями </span><span><a class="pink-link" target="_blank" href="confidential.html">политики конфиденциальности</a></span>
+                </label>
+            </div>
             <div class="modal__button-wrap">
                 <button class="button button_color_pink modal__button" type="submit">
                     Отправить
@@ -1144,7 +1157,12 @@
             <input type="hidden" name="modal" value="reserve-done">
             <textarea name="comment" class="input modal__input modal__input_type_textarea"
                       placeholder="Комментарий"></textarea>
-
+            <div class="modal__checkbox-wrap">
+                <label class="modal__checkbox-label">
+                    <input type="checkbox">
+                    <span>Я согласен на обработку персональных данных в соответствии с условиями </span><span><a class="pink-link" target="_blank" href="confidential.html">политики конфиденциальности</a></span>
+                </label>
+            </div>
             <div class="modal__button-wrap">
                 <button class="button button_color_pink modal__button" type="submit">
                     Отправить
@@ -1191,7 +1209,12 @@
                     </p>
                 </div>
             </div>
-
+            <div class="modal__checkbox-wrap">
+                <label class="modal__checkbox-label">
+                    <input type="checkbox">
+                    <span>Я согласен на обработку персональных данных в соответствии с условиями </span><span><a class="pink-link" target="_blank" href="confidential.html">политики конфиденциальности</a></span>
+                </label>
+            </div>
             <div class="modal__button-wrap">
                 <button class="button button_color_pink modal__button" type="submit">Отправить</button>
             </div>
@@ -1211,7 +1234,7 @@
 
     <div class="modal__content">
         <form action="mail.php" class="modal__form">
-            <div class="row">
+            <div class="row mb10">
                 <div class="col-md-6">
                     <input type="text" name="name" placeholder="Имя" class="input modal__input">
                     <input type="text" name="phone" required placeholder="Номер телефона*" class="input modal__input">
@@ -1231,7 +1254,12 @@
                     </p>
                 </div>
             </div>
-
+            <div class="col-md-12 modal__checkbox-wrap">
+                <label class="modal__checkbox-label">
+                    <input type="checkbox">
+                    <span>Я согласен на обработку персональных данных в соответствии с условиями </span><span><a class="pink-link" target="_blank" href="confidential.html">политики конфиденциальности</a></span>
+                </label>
+            </div>
             <div class="modal__button-wrap">
                 <button class="button button_color_pink modal__button" type="submit">Отправить</button>
             </div>
@@ -1246,7 +1274,7 @@
 
     <h3 class="modal__header">
         Спасибо!<br>
-        <small class="modal__text">Мы свяжемся с Вами в течении 7 минут</small>
+        <small class="modal__text">Мы свяжемся с Вами в течение 7 минут</small>
     </h3>
 
     <div class="modal__content modal__content_reserve-done">
@@ -1271,7 +1299,7 @@
     <div class="modal__content">
         <div class="modal__button-wrap modal__button-wrap_align_left">
             <button class="button button_color_pink text modal_button modal__button_type_ideas-done">Продолжить
-                бронирование
+                бронирование</button>
         </div>
     </div>
 
