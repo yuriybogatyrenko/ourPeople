@@ -159,6 +159,10 @@ body {
 	cursor: pointer;
 }
 
+.button:disabled {
+    opacity: 0.7;
+}
+
 .button:hover {
 	text-decoration: none;
 	color: #FFF;

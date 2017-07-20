@@ -67,6 +67,21 @@ $(function(){
 		$('.modal').removeClass('modal_visible').addClass('modal_hidden');
 	});
 
+	$('form').each(function () {
+        var $form = $(this);
+        var $buttons = $form.find('button');
+
+        $buttons.attr('disabled', true);
+
+        $form.find('input:checkbox').on('change', function (e) {
+            if($(this).is(':checked')) {
+                $buttons.attr('disabled', false);
+            } else {
+                $buttons.attr('disabled', true);
+            }
+        })
+    });
+
 	$('form').submit(function (e) {
 		e.preventDefault();
 
