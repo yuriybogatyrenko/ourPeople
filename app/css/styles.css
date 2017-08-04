@@ -599,11 +599,12 @@ body {
 }
 
 .rooms__type_name_blue.rooms__type_active, .rooms__type_name_blue:hover {
-	background-color: #34689D;
+	background-color: #f5f5dc;
+	color: #3c3c3c;
 }
 
 .rooms__type_name_mint.rooms__type_active, .rooms__type_name_mint:hover {
-	background-color: #55D0BE;
+	background-color: #f3e5ab;
 }
 
 .rooms__type_name_yellow.rooms__type_active, .rooms__type_name_yellow:hover {
@@ -1343,4 +1344,23 @@ body {
 .modal__checkbox-wrap {
     margin-bottom: 10px;
     text-align: left;
+}
+
+.section-3d {
+	position: relative;
+}
+
+.section-3d:after {
+	display: block;
+	content: '';
+	padding-bottom: 55%;
+}
+
+.section-3d iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin-top: 40px;
 }
