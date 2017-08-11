@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="//cdn.jsdelivr.net/g/jquery@1.11.0"></script>
+    <script src="//cdn.jsdelivr.net/jquery.cookie/1.4.0/jquery.cookie.min.js"></script>
+</head>
+<body>
+<script>
+    var is_safari = navigator.userAgent.indexOf("Safari") > -1; // safari detection
+    if (is_safari) {
+
+        if (!$.cookie("hostelsvoiludi_fixed")) {
+            $.cookie("hostelsvoiludi_fixed", "fixed", { expires: 365, path: "/" }); // 1 year
+            if (document.body.clientWidth > 767) {  window.location.replace("//hostelsvoiludi-book.otelms.com/_safari_fix.html");}
+            else { window.location.replace("//hostelsvoiludi-book-m.otelms.com/_safari_fix.html");}
+        }
+    }
+</script>
+
+<script type="text/javascript">// <![CDATA[
+var myEventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+var myEventListener = window[myEventMethod];
+var myEventMessage = myEventMethod == "attachEvent" ? "onmessage" : "message";
+myEventListener(myEventMessage, function(e) {
+    if (e.data === parseInt(e.data))
+    { document.getElementById("my-iframe-id").height = e.data + "px"; console.log(e.data);
+    }
+}, false);
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\[").replace(/[\]]/, "\]");
+    var regex = new RegExp("[\?"+"\u0026"+"]" + name + "=([^"+"\u0026"+"#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+// ]]>
+document.addEventListener("DOMContentLoaded", function(event) {
+    var url;
+    if (document.body.clientWidth > 767) {
+        url = "//hostelsvoiludi-book.otelms.com/bookit/step1/?inline=true" + "\u0026"
+            +  "datein=" + getParameterByName("datein") + "\u0026"
+            + "dateout=" + getParameterByName("dateout") + "\u0026"
+            + "lang=" + getParameterByName("lang");
+    }
+    else {
+        url = "//hostelsvoiludi-book-m.otelms.com/bookit/step1/?inline=true" + "\u0026"
+            + "datein=" + getParameterByName("datein") + "\u0026"
+            + "dateout=" + getParameterByName("dateout") + "\u0026"
+            + "lang=" + getParameterByName("lang");
+    };
+    document.getElementById("my-iframe-id").src = url;
+});
+// ]]>
+</script>
+<div style="margin: 0px;">
+    <iframe id="my-iframe-id" src="" style="border: 0;" width="100%" height="240" scrolling="no"></iframe>
+</div>
+
+</body>
+</html>
